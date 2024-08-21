@@ -17,13 +17,9 @@ let staff = `🚩 *EQUIPO DE AYUDANTES*
 🚩 *Número:* Wa.me/18294868853
 
 • Jose Mods
-🍟 *Rol:* Contribuidor
+🍟 *Rol:* Developer
 🚩 *Número:* Wa.me/51950148255
 
-• Dino
-🍟 *Rol:* Editor
-🚩 *Número:* Wa.me/527774603921
-`
 await conn.sendFile(m.chat, icons, 'yaemori.jpg', staff.trim(), fkontak, true, {
 contextInfo: {
 'forwardingScore': 200,
