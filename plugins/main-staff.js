@@ -5,9 +5,9 @@ let staff = `🚩 *EQUIPO DE AYUDANTES*
 
 👑 *Propietario:*
 
-• Diamond
+• Ivan
 🍟 *Rol:* Propietario
-🚩 *Número:* wa.me/5351524614
+🚩 *Número:* wa.me/595 972 157130
 ✨️ *GitHub:* https://github.com/David-Chian
 
 🌸  *Colaboradores:*
