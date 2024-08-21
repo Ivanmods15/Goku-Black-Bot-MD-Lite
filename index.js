@@ -13,7 +13,7 @@ const require = createRequire(__dirname);
 const { name, description, author, version } = require(join(__dirname, './package.json'));
 const { say } = cfonts;
 const rl = createInterface(process.stdin, process.stdout);
-say('Goku-Black\nBot-MD', {
+say('Goku-\nBlack\nBot-MD', {
 font: 'block',
 align: 'center',
 colors: ['white']
