@@ -25,17 +25,17 @@ global.prems = []
 
 //• ↳ ◜𝑴𝑨𝑹𝑪𝑨𝑺 𝑫𝑬 𝑨𝑮𝑼𝑨◞ • 💌
 global.packsticker = `♾ ━━━━━━━━\n├ ɓσƭ:\n├ ρяοριєταяιο:\n├ ƒєϲнα ∂є ϲяєαϲιόи:\n├ нοяα:\n♾━━━━━━━━`
-global.packname = `☄️`
-global.author = `♾━━━━━━━━\n⇝͟͞ ۵̤͟𝚳̶̤𝚵̅𝔾̈͟𝖀𝐌̶̤𝚰̅𝚴̈͟♡̵̑ ͟͞   ᷨᜳ ͦ ̵ͭ⋆\n⇝ ۵-̱̅𝐃𝖆𝒗𝖏𝖉𐝃𐋃ᶜʱⁱᵃᶯ-͞ˍ\n⇝ ${moment.tz('America/Los_Angeles').format('DD/MM/YY')}\n⇝ ${moment.tz('America/Los_Angeles').format('HH:mm:ss')} \n♾━━━━━━━━\n\n\n\nѕτιϲκєя ϐγ: ৎ୭࠭͢𝑴𝒆̤𝒈𝒖̣֟፝֯𝒎̤𝒊̣𝒏🔥̤ʙⷪᴏ͓ᷫᴛⷭ𓆪͟͞ `;
-global.wm = 'ʙⷪᴏ͓ᷫᴛⷭ𓆪';
-global.titulowm = 'XD';
-global.titulowm2 = `XD`
-global.igfg = 'ᥫᩣ'
-global.botname = '💥'
-global.dev = '🪐'
-global.textbot = '💫'
-global.gt = ' ͟͞';
-global.namechannel = '凸'
+global.packname = `ᘜOKᑌ-ᗷᒪ̀AᑕK-ᗷOT-ᗰᗪ-ᒪITᗴ🪼`
+global.author = `♾━━━━━━━━\n𝐆𝐨𝐤𝐮-𝐁𝐥𝐚𝐜𝐤-𝐁𝐨𝐭-𝐌𝐃-𝐋𝐢𝐭𝐞\n𝑰𝒗𝒂𝒏\n⇝ ${moment.tz('America/Los_Angeles').format('DD/MM/YY')}\n⇝ ${moment.tz('America/Los_Angeles').format('HH:mm:ss')} \n♾━━━━━━━━\n\n\n\nѕτιϲκєя ϐγ: 𝑮𝒐𝒌𝒖-𝑩𝒍𝒂𝒄𝒌-𝑩𝒐𝒕-𝑴𝑫-𝑳𝒊𝒕𝒆`;
+global.wm = '𝗚𝗼𝗸𝘂-𝗕𝗹𝗮𝗰𝗸-𝗕𝗼𝘁-𝗠𝗗-𝗟𝗶𝘁𝗲';
+global.titulowm = '𝖦𝗈𝗄𝗎-𝖡𝗅𝖺𝖼𝗄-𝖡𝗈𝗍-𝖬𝖣-𝖫𝗂𝗍𝖾';
+global.titulowm2 = `ＧＯＫＵ-ＢＬＡＣＫ-ＢＯＴ-ＭＤ-ＬＩＴＥ`
+global.igfg = 'ᥫᩣɢᴏᴋᴜ-ʙʟᴀᴄᴋ-ʙᴏᴛ-ᴍᴅ-ʟɪᴛᴇ🪐'
+global.botname = 'ꍌꄲꀘ꒤-ꃳ꒒ꋬꉔꀘ-ꃳꄲ꓄-ꂵ꒯-꒒꒐꓄ꏂ 🪻'
+global.dev = 'gσкυ-вℓα¢к-вσт-м∂-ℓιтє🐦‍⬛'
+global.textbot = '𝐆𝐎𝐊𝐔-𝐁𝐋𝐀𝐂𝐊-𝐁𝐎𝐓-𝐌𝐃-𝐋𝐈𝐓𝐄'
+global.gt = '𝔾𝕆𝕂𝕌-𝔹𝕃𝔸ℂ𝕂-𝔹𝕆𝕋-𝕄𝔻-𝕃𝕀𝕋𝔼';
+global.namechannel = 'ꍌꄲꀘ꒤-ꃳ꒒ꋬꉔꀘ-ꃳꄲ꓄-ꂵ꒯-꒒꒐꓄ꏂ'
 global.vs = '3.0.1'
 
 
@@ -88,7 +88,7 @@ global.fakegif4 = { key: { participant: `0@s.whatsapp.net`, ...(false ? { remote
 
 global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: 'BLACKLITE', orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
 
-global.fgif2 = { key: {participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title":`BLACKLITE`, "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': `BLACKLITE`, 'jpegThumbnail': logo4 }}}
+global.fgif2 = { key: {participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title":`𝙂𝙊𝙆𝙐-𝘽𝙇𝘼𝘾𝙆-𝘽𝙊𝙏-𝙈𝘿-𝙇𝙄𝙏𝙀💥`, "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': `𝐆𝐎𝐊𝐔-𝐁𝐋𝐀𝐂𝐊-𝐁𝐎𝐓-𝐌𝐃-𝐋𝐈𝐓𝐄🌦`, 'jpegThumbnail': logo4 }}}
 
 //• ↳ ◜𝑳𝑰𝑵𝑲𝑺◞ • 🌿
 global.gp4 = 'https://chat.whatsapp.com/GD0al1LF7Ux2dmPF0fDFYZ' //Grupo Oficial De Goku-Black-Bot-MD-Lite
