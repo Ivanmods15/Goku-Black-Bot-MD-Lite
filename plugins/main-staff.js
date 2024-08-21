@@ -7,7 +7,7 @@ let staff = `🚩 *EQUIPO DE AYUDANTES*
 
 • Ivan
 🍟 *Rol:* Propietario
-🚩 *Número:* wa.me/595 972157130
+🚩 *Número:* wa.me/595972157130
 ✨️ *GitHub:* https://github.com/David-Chian
 
 🌸  *Colaboradores:*
