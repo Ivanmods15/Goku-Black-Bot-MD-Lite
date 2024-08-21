@@ -29,7 +29,7 @@ console.log(`Error : ${e}`)
 
 let pp = ''
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-//let pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/327f6ad853cb4f405aa80.jpg')
+//let pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/22ca78070f722917ced75.jpg')
 
 //creador y otros
 global.creador = 'Wa.me/595972157130'
@@ -101,12 +101,12 @@ global.fake = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo
 }}, { quoted: m }
 
 global.icono = [ 
-'https://telegra.ph/file/1b1e9dc1f68fba7104afe.jpg',
-'https://telegra.ph/file/a60f80a476fffc5ce4db9.jpg',
-'https://telegra.ph/file/bb44e64a5fa8ad458bf19.jpg',
-'https://telegra.ph/file/6c262b841689f9e9837d4.jpg',
-'https://telegra.ph/file/6c262b841689f9e9837d4.jpg',
-'https://telegra.ph/file/e2f5dbd931741402527e3.jpg'
+'https://telegra.ph/file/22ca78070f722917ced75.jpg',
+'https://telegra.ph/file/22ca78070f722917ced75.jpg',
+'https://telegra.ph/file/22ca78070f722917ced75.jpg',
+'https://telegra.ph/file/22ca78070f722917ced75.jpg',
+'https://telegra.ph/file/22ca78070f722917ced75.jpg',
+'https://telegra.ph/file/22ca78070f722917ced75.jpg'
 ].getRandom()
 
 global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363276986902836@newsletter", serverMessageId: 100, newsletterName: namechannel, }, externalAdReply: { showAdAttribution: true, title: textbot, body: 'El Bot más God💣', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
