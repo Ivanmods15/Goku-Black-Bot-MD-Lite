@@ -24,19 +24,15 @@ global.suittag = ['595972157130']
 global.prems = []
 
 //• ↳ ◜𝑴𝑨𝑹𝑪𝑨𝑺 𝑫𝑬 𝑨𝑮𝑼𝑨◞ • 💌
-global.packsticker = `♾ ━━━━━━━━\n├ ɓσƭ:\n├ ρяοριєταяιο:\n├ ƒєϲнα ∂є ϲяєαϲιόи:\n├ нοяα:\n♾━━━━━━━━`
-global.packname = `gσкυ-вℓα¢к-вσт-м∂-ℓιтє`
-global.author = `\n𝐆𝐨𝐤𝐮-𝐁𝐥𝐚𝐜𝐤-𝐁𝐨𝐭-𝐌𝐃-𝐋𝐢𝐭𝐞\n⇝ Iᐯᗩᑎ\n⇝ ${moment.tz('America/Los_Angeles').format('DD/MM/YY')}\n⇝ ${moment.tz('America/Los_Angeles').format('HH:mm:ss')} \n♾━━━━━━━━\n\n\n\nѕτιϲκєя ϐγ: g᥆kᥙ-ᑲᥣᥲᥴk-ᑲ᥆𝗍-mძ-ᥣі𝗍ᥱღ`;
-global.wm = '𓆩ᏀϴᏦႮ-ᏴᏞᎪᏟᏦ-ᏴϴͲ-ᎷᎠ-ᏞᏆͲᎬ𓆪';
-global.titulowm = 'ᦋꪮƙꪊ-ꪉꪶꪖᨶƙ-ꪉꪮᡶ-ꪑᦔ-ꪶỉᡶꫀᥬ👾᭄';
-global.titulowm2 = '₲Ø₭Ʉ-฿Ⱡ₳₵₭-฿Ø͜͡₮͜͡-͜͡₥͜͡Đ͜͡-͜͡Ⱡ͜͡ł͜͡₮͜͡E'
-global.igfg = 'G͜͡o͜͡k͜͡u͜͡-͜͡B͜͡l͜͡a͜͡c͜͡k͜͡-͜͡B͜͡o͜͡t͜͡-͜͡M͜͡D͜͡-͜͡L͜͡i͜͡t͜͡e͜͡ '
-global.botname = '𝓰ₒₖᵤ-ᵦₗₐ𝒸ₖ-ᵦₒₜ-ₘ𝒹-ₗᵢₜₑ'
-global.dev = '𝕲𝕺𝕶𝖀-𝕭𝕷𝕬𝕮𝕶-𝕭𝕺𝕿-𝕸𝕯-𝕷𝕴𝕿𝕰'
-global.textbot = '𝒢𝑜𝓀𝓊-𝐵𝓁𝒶𝒸𝓀-𝐵𝑜𝓉-𝑀𝒟-𝐿𝒾𝓉𝑒🌦'
-global.gt = '';
-global.namechannel = '𝓖𝓸𝓴𝓾-𝓑𝓵𝓪𝓬𝓴-𝓑𝓸𝓽-𝓜𝓓-𝓛𝓲𝓽𝓮🪐'
-global.vs = '3.0.1'
+global.packname = '⪛✰ 𝐆𝐨𝐤𝐮 𝐁𝐥𝐚𝐜𝐤 𝐁𝐨𝐭 - 𝐌𝐃 ✰⪜'
+global.author = '𝙸𝚅𝙰𝙽 👑'
+global.wm = '✨◌*̥₊ GᴏᴋᴜB𝚕𝚊𝚌𝚔Bᴏᴛ-MD ◌❐⚡༉'
+global.titulowm = 'Goku-Black-Bot-MD 🍟'
+global.titulowm2 = 'Ivan'
+global.igfg = '𝘐𝘷𝘢𝘯'
+global.botname = 'ɢᴏᴋᴜ 𝙱𝚕𝚊𝚌𝚔 Bᴏᴛ - MD 🚩'
+global.dev = '👑 Developed By • ✨ Ivan'
+global.textbot = '𝗚𝗼𝗸𝘂𝗕𝗹𝗮𝗰𝗸𝗕𝗼𝘁 : 𝗜𝘃𝗮𝗻 🚩'
 
 
 //• ↳ ◜𝑰𝑴𝑨́𝑮𝑬𝑵𝑬𝑺◞ • 🌇
