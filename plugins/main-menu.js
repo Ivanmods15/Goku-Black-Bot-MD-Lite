@@ -187,13 +187,13 @@ await conn.sendMessage(
     mentionedJid: [m.sender],
     isForwarded: true,
     forwardedNewsletterMessageInfo: {
-      newsletterJid: '120363307382381547@newsletter',
+      newsletterJid: '120363276986902836@newsletter',
       newsletterName: 'ᘜOKᑌ-ᗷᒪᗩᑕK-ᗷOT-ᗰᗪ-ᒪITᗴ',
       serverMessageId: -1,
     },
     forwardingScore: 999,
     externalAdReply: {
-      title: '⏤͟͞ू⃪ ፝͜⁞M͢ᴇɢ፝֟ᴜᴍ⃨ɪɴ⃜✰⃔࿐',
+      title: '𝐆𝐨𝐤𝐮-𝐁𝐥𝐚𝐜𝐤-𝐁𝐨𝐭-𝐌𝐃-𝐋𝐢𝐭𝐞',
       body: dev,
       thumbnailUrl: icono,
       sourceUrl: redes,
