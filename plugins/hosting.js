@@ -14,7 +14,7 @@ https://dash.corinplus.com
 
 Sigan nuestro canal para estar informados de los próximos pasos y novedades: https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g 
 
-*¡Nos vemos en _CorinPlus Host!*`
+*¡Nos vemos en CorinPlus Host!*`
 await conn.sendFile(m.chat, img, "Thumbnail.jpg", txt, m, null, rcanal)
 }
 handler.help = ['Corinplus']
