@@ -28,14 +28,14 @@ global.packsticker = `♾ ━━━━━━━━\n├ ɓσƭ:\n├ ρяορι�
 global.packname = `gσкυ-вℓα¢к-вσт-м∂-ℓιтє`
 global.author = `\n𝐆𝐨𝐤𝐮-𝐁𝐥𝐚𝐜𝐤-𝐁𝐨𝐭-𝐌𝐃-𝐋𝐢𝐭𝐞\n⇝ Iᐯᗩᑎ\n⇝ ${moment.tz('America/Los_Angeles').format('DD/MM/YY')}\n⇝ ${moment.tz('America/Los_Angeles').format('HH:mm:ss')} \n♾━━━━━━━━\n\n\n\nѕτιϲκєя ϐγ: g᥆kᥙ-ᑲᥣᥲᥴk-ᑲ᥆𝗍-mძ-ᥣі𝗍ᥱღ`;
 global.wm = '𓆩ᏀϴᏦႮ-ᏴᏞᎪᏟᏦ-ᏴϴͲ-ᎷᎠ-ᏞᏆͲᎬ𓆪';
-global.titulowm = '͟͞ ৎ୭࠭͢💥͟𝑬̶𝒙͞𝒑͟𝒍𝒐̶𝒔̅𝒊͟𝒐́𝒏̶🔥̤𓆪 ͟͞';
-global.titulowm2 = `͟͞ ৎ୭࠭͢💥͟𝑬̶𝒙͞𝒑͟𝒍𝒐̶𝒔̅𝒊͟𝒐́𝒏̶🔥̤𓆪 ͟͞`
-global.igfg = 'ᥫᩣᎠ꯭I𝚫⃥꯭M꯭Ꭷ꯭Ꮑ꯭Ꭰ࠭⋆̟(◣_◢)凸'
-global.botname = '⏤͟͞ू⃪ ፝͜⁞M͢ᴇɢ፝֟ᴜᴍ⃨ɪɴ⃜✰⃔࿐'
-global.dev = '🔥 Powered By Dɪᴀᴍᴏɴᴅ (◣_◢)'
-global.textbot = '⏤͟͞ू⃪ ፝͜⁞M͢ᴇɢ፝֟ᴜᴍ⃨ɪɴ⃜✰⃔࿐ : ᥫᩣᎠ꯭I𝚫⃥꯭M꯭Ꭷ꯭Ꮑ꯭Ꭰ࠭⋆̟(◣_◢)凸'
+global.titulowm = 'ᦋꪮƙꪊ-ꪉꪶꪖᨶƙ-ꪉꪮᡶ-ꪑᦔ-ꪶỉᡶꫀᥬ👾᭄';
+global.titulowm2 = '₲Ø₭Ʉ-฿Ⱡ₳₵₭-฿Ø͜͡₮͜͡-͜͡₥͜͡Đ͜͡-͜͡Ⱡ͜͡ł͜͡₮͜͡Ɇ͜͡'͜͡
+global.igfg = 'G͜͡o͜͡k͜͡u͜͡-͜͡B͜͡l͜͡a͜͡c͜͡k͜͡-͜͡B͜͡o͜͡t͜͡-͜͡M͜͡D͜͡-͜͡L͜͡i͜͡t͜͡e͜͡'
+global.botname = '𝓰ₒₖᵤ-ᵦₗₐ𝒸ₖ-ᵦₒₜ-ₘ𝒹-ₗᵢₜₑ'
+global.dev = '𝕲𝕺𝕶𝖀-𝕭𝕷𝕬𝕮𝕶-𝕭𝕺𝕿-𝕸𝕯-𝕷𝕴𝕿𝕰'
+global.textbot = '𝒢𝑜𝓀𝓊-𝐵𝓁𝒶𝒸𝓀-𝐵𝑜𝓉-𝑀𝒟-𝐿𝒾𝓉𝑒🌦'
 global.gt = '';
-global.namechannel = '⏤͟͞ू⃪ ፝͜⁞M͢ᴇɢ፝֟ᴜᴍ⃨ɪɴ⃜✰⃔࿐/ᥫᩣᎠ꯭I𝚫⃥꯭M꯭Ꭷ꯭Ꮑ꯭Ꭰ࠭⋆̟(◣_◢)凸'
+global.namechannel = '𝓖𝓸𝓴𝓾-𝓑𝓵𝓪𝓬𝓴-𝓑𝓸𝓽-𝓜𝓓-𝓛𝓲𝓽𝓮🪐'
 global.vs = '3.0.1'
 
 
