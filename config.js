@@ -34,7 +34,6 @@ global.botname = 'ɢᴏᴋᴜ 𝙱𝚕𝚊𝚌𝚔 Bᴏᴛ - MD 🚩'
 global.dev = '👑 Developed By • ✨ Ivan'
 global.textbot = '𝗚𝗼𝗸𝘂𝗕𝗹𝗮𝗰𝗸𝗕𝗼𝘁 : 𝗜𝘃𝗮𝗻 🚩'
 
-
 //• ↳ ◜𝑰𝑴𝑨́𝑮𝑬𝑵𝑬𝑺◞ • 🌇
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
 global.imagen2 = fs.readFileSync('./src/anime.jpg');
