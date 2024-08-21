@@ -18,7 +18,7 @@ let staff = `🚩 *EQUIPO DE AYUDANTES*
 
 • Jose Mods
 🍟 *Rol:* Developer
-🚩 *Número:* Wa.me/51950148255
+🚩 *Número:* Wa.me/51950148255`
 
 await conn.sendFile(m.chat, icons, 'yaemori.jpg', staff.trim(), fkontak, true, {
 contextInfo: {
