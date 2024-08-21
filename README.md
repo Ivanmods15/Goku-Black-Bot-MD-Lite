@@ -1,4 +1,4 @@
-Bienvenidos A GOKU-BLACK-BOT-MD-LITE Espero Les guste . Esto se hace con fines de proyectos y educación 😉 Dejen su estrellita me ayudaría mucho.
+Bienvenidos A GOKU-BLACK-BOT-MD-LITE Espero Les guste Esto se hace con fines de proyectos y educación 😉 Dejen su estrellita me ayudaría mucho.
 <p align="center">
 <img src="https://telegra.ph/file/49baa73f0c2f42ad7e85b.png" alt="Goku-Black-Bot-MD-Lite" width="900"/>
 </p>
