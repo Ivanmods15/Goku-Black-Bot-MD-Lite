@@ -101,12 +101,12 @@ global.fake = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo
 }}, { quoted: m }
 
 global.icono = [ 
-'https://telegra.ph/file/465c19aff6901c8f6e57f.jpg',
-'https://telegra.ph/file/856e44c9d844853e075cd.jpg',
-'https://telegra.ph/file/b57bbca75d23852c832f7.jpg',
-'https://telegra.ph/file/218bb0ab792902a57d7ae.jpg',
-'https://telegra.ph/file/aeb1fe12db2b0e4c60cd3.jpg',
-'https://telegra.ph/file/e05334d1e187123884d66.jpg',
+'https://telegra.ph/file/2c4f56fb26a37563cdf6a.jpg',
+'https://telegra.ph/file/d4dff9f0269433552a05a.jpg',
+'https://telegra.ph/file/d4dff9f0269433552a05a.jpg',
+'https://telegra.ph/file/d4dff9f0269433552a05a.jpg',
+'https://telegra.ph/file/2c4f56fb26a37563cdf6a.jpg',
+'https://telegra.ph/file/2c4f56fb26a37563cdf6a.jpg',
 ].getRandom()
 
 global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363276986902836@newsletter", serverMessageId: 100, newsletterName: namechannel, }, externalAdReply: { showAdAttribution: true, title: textbot, body: 'El Bot más God💣', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
