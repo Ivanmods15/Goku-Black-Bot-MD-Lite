@@ -69,12 +69,12 @@ let fkontak = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.cha
                                 rows: [
 {
 title: "│🤴│ᴄʀᴇᴀᴅᴏʀ ᴅᴇʟ ʙᴏᴛ", 
-description: "ɴᴜᴍᴇʀᴏs ᴏғɪᴄɪᴀʟᴇs ᴅᴇ ᴅᴀᴠɪᴅ ᴄʜɪᴀɴ",
+description: "ɴᴜᴍᴇʀᴏs ᴏғɪᴄɪᴀʟᴇ𝚜",
 id: `${prefijo}owner`
 },
 {
 title: "│🔥│ɢʀᴜᴘᴏs ᴏғᴄ ᴅᴇʟ ʙᴏᴛ", 
-description: "ᴏʙᴛᴇɴ ʟᴀ ʟɪsᴛᴀ ᴅᴇ ʟᴏs ɢʀᴜᴘᴏs ᴏғɪᴄɪᴀʟᴇs ᴅᴇ ᴍᴇɢᴜᴍɪɴ-ʙᴏᴛ",
+description: "ᴏʙᴛᴇɴ ʟᴀ ʟɪsᴛᴀ ᴅᴇ ʟᴏs ɢʀᴜᴘᴏs ᴏғɪᴄɪᴀʟᴇs ᴅᴇ 𝙶𝙾𝙺𝚄-𝙱𝙻𝙰𝙲𝙺-𝙱𝙾𝚃-𝙼𝙳-𝙻𝙸𝚃𝙴",
 id: `${prefijo}grupos`
 },
 {
@@ -84,7 +84,7 @@ id: `${prefijo}estado`
 },
 {
 title: "│❔│ɪɴғᴏ ᴅᴇʟ ʙᴏᴛ", 
-description: "ᴏʙᴛᴇɴ ʟᴀ ɪɴғᴏʀᴍᴀᴄɪᴏɴ ᴅᴇ ᴍᴇɢᴜᴍɪɴ-ʙᴏᴛ",
+description: "ᴏʙᴛᴇɴ ʟᴀ ɪɴғᴏʀᴍᴀᴄɪᴏɴ ᴅᴇ 𝙶𝙾𝙺𝚄-𝙱𝙻𝙰𝙲𝙺-𝙱𝙾𝚃-𝙼𝙳-𝙻𝙸𝚃𝙴",
 id: `${prefijo}infobot`
 },
 {
