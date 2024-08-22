@@ -280,7 +280,7 @@ process.on('uncaughtException', console.error)
 /*async function connectSubBots() {
 const subBotDirectory = './MeguminJadiBot';
 if (!existsSync(subBotDirectory)) {
-console.log('🚩 Megumin-Bot no tiene Sub-Bots vinculados.');
+console.log('🚩 GokuBlack no tiene Sub-Bots vinculados.');
 return;
 }
 
