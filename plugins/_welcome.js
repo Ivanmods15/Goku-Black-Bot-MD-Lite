@@ -1,60 +1,95 @@
-import { WAMessageStubType } from '@whiskeysockets/baileys';
+import {WAMessageStubType} from '@whiskeysockets/baileys';
 import fetch from 'node-fetch';
 
-export async function before(m, { conn, participants, groupMetadata }) {
-  if (!m.messageStubType || !m.isGroup) return true;
+export async function before(m, {conn, participants, groupMetadata}) {
+  if (!m.messageStubType || !m.isGroup) return !0;
+  let pp = await conn.profilePictureUrl(m.messageStubParameters[0], 'image').catch(_ => './src/avatar_contact.png')
+  let chat = global.db.data.chats[m.chat]
 
-  let vn = 'https://qu.ax/cTDa.mp3';
-  let vn2 = 'https://qu.ax/xynz.mp3';
-  let welc = welcome;
-  let adi = adios;
-  let chat = global.db.data.chats[m.chat];
-  const getMentionedJid = () => {
-    return m.messageStubParameters.map(param => `${param}@s.whatsapp.net`);
-  };
-
-  let who = m.messageStubParameters[0] + '@s.whatsapp.net';
-  let user = global.db.data.users[who];
-
-  let userName = user ? user.name : await conn.getName(who);
-
-  if (chat.welcome && m.messageStubType === 27) {
-    this.sendMessage(m.chat, {
-      audio: { url: vn },
-      contextInfo: {
-        mentionedJid: getMentionedJid(),
-        "externalAdReply": {
-          "thumbnail": welc,
-          "title": "  ͟͞ Ｗ Ｅ Ｌ Ｃ Ｏ Ｍ Ｅ ͟͞  ",
-          "body": `${userName}!`,
-          "previewType": "PHOTO",
-          "thumbnailUrl": null,
-          "showAdAttribution": true,
-          sourceUrl: [yt, md, channel].sort(() => 0.5 - Math.random())[0]
-        }
+  if (chat.welcome && m.messageStubType == 27) {
+    let welcome = `┌─★ *Goku-Black-Bot-MD-Lite* \n│「 Bienvenido 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │✑  Bienvenido a\n   │✑  ${groupMetadata.subject}\n   └───────────────┈ ⳹`
+    
+    await conn.sendMessage(
+    m.chat,
+    {
+      image: {
+        url: pp,
       },
-      ptt: true,
-      mimetype: 'audio/mpeg',
-      fileName: 'welcome.mp3'
-    }, { quoted: fkontak });
-  }
-
-  if (chat.welcome && (m.messageStubType === 28 || m.messageStubType === 32)) {
-    this.sendMessage(m.chat, {
-      audio: { url: vn2 },
+      caption: welcome,
       contextInfo: {
-        mentionedJid: getMentionedJid(),
-        "externalAdReply": {
-          "showAdAttribution": true,
-          "containsAutoReply": true,
-          "title": '  ͟͞ Ａ Ｄ Ｉ Ｏ́ Ｓ ͟͞  ',
-          body: `${userName}, se despide.`,
-          "previewType": "PHOTO",
-          "thumbnailUrl": '',
-          "thumbnail": adi,
-          "sourceUrl": redes
-        }
-      }
-    }, { quoted: null });
+      mentionedJid: [m.messageStubParameters[0]],
+      forwardingScore: 9999, 
+       isForwarded: true, 
+        externalAdReply: {
+          title: gcname,
+          sourceUrl: group,
+          mediaType: 1,
+          renderLargerThumbnail: true, 
+          thumbnail: thumbnail,
+        },
+      },
+    },
+    {
+      quoted: estilo,
+    }
+  )
   }
-}
+  
+if (chat.welcome && m.messageStubType == 28) {
+    let bye = `┌─★ *Goku-Black-Bot-MD-Lite* \n│「 ADIOS 👋 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │✑  Se fue\n   │✑ Jamás te quisimos aquí\n   └───────────────┈ ⳹`
+
+    await conn.sendMessage(
+    m.chat,
+    {
+      image: {
+        url: pp,
+      },
+      caption: bye,
+      contextInfo: {
+      mentionedJid: [m.messageStubParameters[0]],
+      forwardingScore: 9999, 
+       isForwarded: true, 
+        externalAdReply: {
+          title: gcname,
+          sourceUrl: group,
+          mediaType: 1,
+          renderLargerThumbnail: true, 
+          thumbnail: thumbnail,
+        },
+      },
+    },
+    {
+      quoted: estilo,
+    }
+  )
+  }
+  
+  if (chat.welcome && m.messageStubType == 32) {
+    let kick = `┌─★ *Goku-Black-Bot-MD-Lite* \n│「 ADIOS 👋 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │✑  Se fue\n   │✑ Jamás te quisimos aquí\n   └───────────────┈ ⳹`
+
+    await conn.sendMessage(
+    m.chat,
+    {
+      image: {
+        url: pp,
+      },
+      caption: kick,
+      contextInfo: {
+      mentionedJid: [m.messageStubParameters[0]],
+      forwardingScore: 9999, 
+       isForwarded: true, 
+        externalAdReply: {
+          title: gcname,
+          sourceUrl: group,
+          mediaType: 1,
+          renderLargerThumbnail: true, 
+          thumbnail: thumbnail,
+        },
+      },
+    },
+    {
+      quoted: estilo,
+    }
+  )
+
+}}
