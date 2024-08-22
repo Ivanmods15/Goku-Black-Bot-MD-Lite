@@ -1,10 +1,10 @@
 var handler  = async (m, { conn }) => {
 
-let texto = `🚩 *Instalación de GOKU-BLACK-BOT-MD-LITE*
-
-*Requisitos para la instalación*
-⬡ Dudas: wa.me/595972157130`
-
+let texto = `🚩*𝐏𝐑𝐎́𝐗𝐈𝐌𝐀𝐌𝐄𝐍𝐓𝐄 𝐄𝐒𝐓𝐀𝐑𝐀 𝐄𝐋 𝐁𝐎𝐓 𝐏𝐀𝐑𝐀 𝐈𝐍𝐒𝐓𝐀𝐋𝐀𝐑,𝐓𝐄 𝐏𝐔𝐄𝐃𝐄𝐒 𝐂𝐎𝐌𝐔𝐍𝐈𝐂𝐀𝐑 𝐂𝐎𝐍 𝐄𝐋 𝐃𝐔𝐄𝐍̃𝐎*
+⬡ 𝐂𝐑𝐄𝐀𝐃𝐎𝐑: wa.me/595972157130
+⬡ 𝐎𝐖𝐍𝐄𝐑𝟏: wa.me/18294868853
+⬡ 𝐎𝐖𝐍𝐄𝐑𝟐: wa.me/51950148255
+𝐁𝐲:𝐆𝐎𝐊𝐔-𝐁𝐋𝐀𝐂𝐊-𝐁𝐎𝐓-𝐌𝐃-𝐋𝐈𝐓𝐄`
 conn.reply(m.chat, texto, m, fake, )
 
 handler.before = async m => {
