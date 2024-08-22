@@ -26,7 +26,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
     let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length;
     const rtotal = Object.entries(global.db.data.users).length || '0'
     let name = await conn.getName(m.sender);
-    let pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => '')
+    let pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => 'https://telegra.ph/file/b57bbca75d23852c832f7.jpg')
     const ftrol = {
     key : {
     remoteJid: 'status@broadcast',
