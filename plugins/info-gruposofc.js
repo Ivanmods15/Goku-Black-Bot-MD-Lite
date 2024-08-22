@@ -7,9 +7,9 @@ let str = `*📍 𝐆𝐑𝐔𝐏𝐎𝐒 𝐎𝐅𝐈𝐂𝐈𝐀𝐋𝐄𝐒*
 ┃🧸❏ ${gp1}
 
 *𝐆𝐎𝐊𝐔-𝐁𝐋𝐀𝐂𝐊-𝐁𝐎𝐓-𝐌𝐃-𝐋𝐈𝐓𝐄 𝐆𝐑𝐔𝐏𝐎 𝐎𝐅𝐈𝐂𝐈𝐀𝐋*
-┃🧸❏ https://chat.whatsapp.com/J9gyFJLbhVIJXaUZlpo8Xt
+┃🧸❏ https://chat.whatsapp.com/GD0al1LF7Ux2dmPF0fDFYZ
 *_𝐂𝐚𝐧𝐚𝐥 𝐎𝐟𝐢𝐜𝐢𝐚𝐥_*
-┃❤️‍🔥❏ https://whatsapp.com/channel/0029VacDy0R6hENqnTKnG820
+┃❤️‍🔥❏ https://whatsapp.com/channel/0029VaYh3Zm4dTnQKQ3VLT0h
 *_╰━━━━━━━━━━━━━━━━⊜_*
 `
 await conn.sendButton(m.chat, str, `𝐓𝐄𝐀𝐌 𝐁𝐋𝐀𝐂𝐊` + wm, media, [
