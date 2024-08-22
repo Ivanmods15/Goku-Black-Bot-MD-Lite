@@ -10,7 +10,7 @@ let chat = global.db.data.chats[m.chat]
 if (m.mentionedJid.includes(this.user.jid) && m.isGroup && !chat.isBanned) {
 let stiker = await sticker(global.sickerque.getRandom(), false, global.packsticker, global.author)  
 this.sendFile(m.chat, stiker, 'sticker.webp', null, m, false, { 
-contextInfo: { externalAdReply: { title: '⏤͟͞ू⃪ ፝͜⁞M͢ᴇɢ፝֟ᴜᴍ⃨ɪɴ⃜✰⃔࿐', body: '𝐐𝐮𝐞 𝐲𝐨 𝐪𝐮𝐞!?', sourceUrl: md, thumbnail: logo2}}})}
+contextInfo: { externalAdReply: { title: '𝐆𝐎𝐊𝐔-𝐁𝐋𝐀𝐂𝐊-𝐁𝐎𝐓-𝐌𝐃-𝐋𝐈𝐓𝐄', body: '𝐐𝐮𝐞 𝐲𝐨 𝐪𝐮𝐞!?', sourceUrl: md, thumbnail: logo2}}})}
 
 return !0 }
 export default handler
