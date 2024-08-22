@@ -31,7 +31,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
     body: { text: `*╭┈─────⸌̗⸃》̗̀💥̖́《⸍̖⸂─────┈╮*\n*│≣ 🔥 ʀᴇsᴜʟᴛᴀᴅᴏs ᴏʙᴛᴇɴɪᴅᴏs:* ${results.videos.length}\n*│≡ 🎲 Video aleatorio:*\n*│≠ 🌹-› Title:* ${randomVideo.title}\n*│≜ 👤-› Author:* ${randomVideo.author.name}\n*│≚ 💫-› Views:* ${randomVideo.views}\n*│≋ 🌱-› Link :* ${randomVideo.url}\n*│≍ 🏞-› Imagen:* ${randomVideo.thumbnail}\n*╰┈─────⸌̗⸃》̗̀🔥̖́《⸍̖⸂─────┈╯*`.trim() },
     footer: { text: `${global.wm}`.trim() },  
       header: {
-          title: `*❤️‍🔥 Mᴇɢᴜᴍɪɴ Sᴇᴀʀᴄʜ ❤️‍🔥*\n`,
+          title: `*❤️‍🔥 Goku-Black Sᴇᴀʀᴄʜ ❤️‍🔥*\n`,
           hasMediaAttachment: true,
           imageMessage: messa.imageMessage,
       },
