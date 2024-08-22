@@ -14,10 +14,10 @@ let sim = similarity(noPrefix, mean)
 let som = sim * 100
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let name = await conn.getName(who)
-let caption = `*🍧  Hola* @${who.split('@')[0]}
-El comando no existe, pero se encontraron resultados similares 
-✔️ *${usedPrefix + mean}*
- ❗ *Similitud:* _${parseInt(som)}%_`
+let caption = `*🪼 𝐇𝐎𝐋𝐀* @${who.split('@')[0]}
+𝐄𝐥 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 𝐜𝐫𝐞𝐨 𝐪𝐮𝐞 ?𝐨 𝐞𝐱𝐢𝐬𝐭𝐞, 𝐩𝐞𝐫𝐨 𝐬𝐞 𝐞𝐧𝐜𝐨𝐧𝐭𝐫𝐚𝐫𝐨𝐧 𝐫𝐞𝐬𝐮𝐥𝐭𝐚𝐝𝐨𝐬 𝐬𝐢𝐦𝐢𝐥𝐚𝐫𝐞𝐬 
+✔ *${usedPrefix + mean}*
+❕ *Similitud:* _${parseInt(som)}%_`
 if (mean) conn.reply(m.chat, caption, m, { mentions: [who]})
 }
 }
