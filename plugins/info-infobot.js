@@ -49,7 +49,7 @@ const handler = async (m, { conn, usedPrefix }) => {
   const Message = {
     document: { url: `https://chat.whatsapp.com/H5bw4MJucS1BBHnZ9wv3vI` },
     mimetype: `application/${document}`,
-    fileName: `「 𝘔𝘦𝘨𝘶𝘮𝘪𝘯-𝘉𝘰𝘵💥 」`,
+    fileName: `「 Goku-Black-Bot-MD-Lite 💥 」`,
     fileLength: 99999999999999,
     pageCount: 200,
     contextInfo: {
@@ -59,7 +59,7 @@ const handler = async (m, { conn, usedPrefix }) => {
 showAdAttribution: !![],
             mediaType: 0x1,
             previewType: "PHOTO",
-        title: "Eʟ Bᴏᴛ Mᴀs Exᴘʟᴏsɪᴠᴏ!",
+        title: "Eʟ Bᴏᴛ Mᴀs good!",
         thumbnail: imagen10,
         renderLargerThumbnail: !![],
         sourceUrl: "https://chat.whatsapp.com/H5bw4MJucS1BBHnZ9wv3vI",
