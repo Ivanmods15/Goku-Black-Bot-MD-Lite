@@ -2,6 +2,8 @@
 
 var handler = async m => 
 
+let img = await (await fetch(`https://telegra.ph/file/f8d943668683e17a3795b.jpg`)).buffer()
+
 conn.reply(m.chat, ` 
 ┏━━━━━━━━━━━━━━━━━━━━┅
 ┇  *「 LINK DE LOS JUEGUITOS +18」*       
