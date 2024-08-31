@@ -96,6 +96,7 @@ global.gp1 = 'https://chat.whatsapp.com/GD0al1LF7Ux2dmPF0fDFYZ' //Grupo
 global.gp2 = 'https://chat.whatsapp.com/LJKcR8QBJgu37bVFWuhRVn'//
 global.comunidad1 = 'https://chat.whatsapp.com/GPEtINYPyIB6a6S55ZJcAO' //Comunidad Megumin
 global.channel = 'https://whatsapp.com/channel/0029VaYh3Zm4dTnQKQ3VLT0h' //Canal Oficial
+global.paypal = 'Comunicate conmigo al wa.me/593939005387'
 global.yt = 'https://youtube.com/@davidchian4957' //Canal De Youtube
 global.md = 'https://github.com/Ivanmods15/Goku-Black-Bot-MD-Lite' //Github Oficial del bot
 global.correo = 'noisebot@gmail.com'
