@@ -14,9 +14,9 @@ conn.reply(m.chat, `
 ┗━━━━━━━━━━━━━━━━━━━━┅
  `, m, fake, )
  
-handler.help = ['juegitos+18']
-handler.tags = ['+18juegos']
-handler.command = /^Juegos+18$/i
+handler.help = ['M']
+handler.tags = ['m']
+handler.command = /^M$/i
  
 handler.limit = true
 handler.register = true
