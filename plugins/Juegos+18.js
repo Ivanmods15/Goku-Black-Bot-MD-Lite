@@ -14,7 +14,7 @@ conn.reply(m.chat, `
 ┃ ❖ https://www.mediafire.com/file_premium/72n7qk5awdezrpz/IWannaFockMyMomsBestFirend-Esp-Apk.rar/file
 ┃ ❖NO OLVIDEN DE SEGUIRME EN MI CANAL<3
 ┃Créditos:Starrhotss ${paypal}
-┗━━━━━━━━━━━━━━━━━━━━┅
+┗━━━━━━━━━━━━━━━━━━━━
  `, m, fake, )
  
 handler.help = ['M']
