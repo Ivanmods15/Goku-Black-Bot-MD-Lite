@@ -1,4 +1,5 @@
 //Código creado por elias1524
+const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png');
 var handler = async m => 
 
 conn.reply(m.chat, ` 
