@@ -13,7 +13,7 @@ conn.reply(m.chat, `
 ┃ ❖ https://www.mediafire.com/file/zvtied9xb01rhue/GameOfWhores-v0.27-Esp-Apk.rar/file
 ┃ ❖ https://www.mediafire.com/file_premium/72n7qk5awdezrpz/IWannaFockMyMomsBestFirend-Esp-Apk.rar/file
 ┃ ❖NO OLVIDEN DE SEGUIRME EN MI CANAL<3
-┃Créditos:Starrhotss ${paypal}
+┃`Créditos:Starrhotss ${paypal}`
 ┗━━━━━━━━━━━━━━━━━━━━
  `, m, fake, )
  
