@@ -1,3 +1,4 @@
+//Código creado por elias1524
 var handler = async m => 
 
 conn.reply(m.chat, ` 
