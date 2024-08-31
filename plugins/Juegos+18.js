@@ -1,7 +1,9 @@
 //Código creado por elias1524
 
 var handler = async m => 
+
 let foto = './storage/logos/Menu1.jpg'
+
 conn.reply(m.chat, ` 
 ┏━━━━━━━━━━━━━━━━━━━━┅
 ┇  *「 LINK DE LOS JUEGUITOS +18」*       
