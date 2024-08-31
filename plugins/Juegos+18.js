@@ -16,6 +16,7 @@ conn.reply(m.chat, `
 ┃Créditos:Starrhots
 ┗━━━━━━━━━━━━━━━━━━━━┅
  `, m, fake, )
+let pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
  
 handler.help = ['M']
 handler.tags = ['m']
