@@ -11,7 +11,7 @@ export async function before(m, {isAdmin, isBotAdmin}) {
   const user = `@${m.sender.split`@`[0]}`;
   const isGroupLink = linkRegex.exec(m.text);
   const grupo = `https://whatsapp.com/channel`;
-  if (isAdmin && chat.antiLink && m.text.includes(grupo)) return m.reply('¡𝐎𝐲𝐞! 𝐍𝐨 𝐞𝐧𝐯𝐢𝐚𝐫 𝐞𝐧𝐥𝐚𝐜𝐞𝐬 , 𝐚𝐥𝐞𝐠𝐫𝐚𝐭𝐞 𝐝𝐞 𝐪𝐮𝐞 𝐡𝐞𝐫𝐞𝐬 𝐚𝐝𝐦𝐢𝐧, 𝐒𝐚𝐥𝐯𝐚𝐝𝐨❕ !');
+  if (isAdmin && chat.antiLink && m.text.includes(grupo)) return m.reply('¡𝐎𝐲𝐞 𝐠𝐚𝐲! 𝐞𝐧 𝐞𝐬𝐭𝐞 𝐠𝐫𝐮𝐩𝐨 𝐞𝐬𝐭𝐚 𝐩𝐫𝐨𝐡𝐢𝐛𝐢𝐝𝐨 𝐦𝐚𝐧𝐝𝐚𝐫 𝐞𝐧𝐥𝐚𝐜𝐞 𝐝𝐞 𝐭𝐮 𝐜𝐚𝐧𝐚𝐥');
   if (chat.antiLink && isGroupLink && !isAdmin) {
     if (isBotAdmin) {
       const linkThisGroup = `https://whatsapp.com.channel/${await this.groupInviteCode(m.chat)}`;
