@@ -3,7 +3,7 @@ if (!(m.chat in global.db.data.chats)) return conn.reply(m.chat, '🍭 *¡ESTE C
 let chat = global.db.data.chats[m.chat]
 if (!chat.isBanned) return conn.reply(m.chat, '🍟 *¡Gogeta-Bot NO ESTÁ BANEADO EN ESTE CHAT!*', m, fake)
 chat.isBanned = false
-await conn.reply(m.chat, '🚩 *¡Gogeta-BOT YA FUÉ DESBANEADO EN ESTE CHAT!*', m, fake)
+await conn.reply(m.chat, '🚩 *¡Gogeta-Bot YA FUÉ DESBANEADO EN ESTE CHAT!*', m, fake)
 }
 handler.help = ['unbanchat'];
 handler.tags = ['mods'];
