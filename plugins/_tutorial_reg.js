@@ -13,6 +13,6 @@ let handler = async (m, { conn }) => {
   await conn.sendMessage(m.chat, { video: { url: videoUrl }, ...options });
 };
 
-handler.command = ['tutorialreg']
+handler.command = ['Priv']
 
 export default handler;
