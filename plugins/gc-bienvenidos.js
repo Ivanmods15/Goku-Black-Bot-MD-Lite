@@ -9,7 +9,7 @@ let handler = async (m, { conn }) => {
         },
         message: {
             videoMessage: { 
-                title: 'Megumin', 
+                title: 'GokuBlack', 
                 h: `Hmm`,
                 seconds: '99999', 
                 gifPlayback: true, 
