@@ -111,8 +111,8 @@ loadChatgptDB();
 
 /* ------------------------------------------------*/
 
-global.authFile = `MeguminSession`
-global.authFileJB = `MeguminJadiBot`
+global.authFile = `BlackSession`
+global.authFileJB = `BlackJadiBot`
 
 const {state, saveState, saveCreds} = await useMultiFileAuthState(global.authFile)
 const msgRetryCounterMap = (MessageRetryMap) => { }
@@ -303,7 +303,7 @@ console.log(chalk.bold.greenBright(`🍟 Todos los Sub-Bots se conectaron con é
 (async () => {
 global.conns = [];
 
-const mainBotAuthFile = 'MeguminSession';
+const mainBotAuthFile = 'BlackSession';
 try {
 const mainBot = await connectionUpdate(mainBotAuthFile);
 global.conns.push(mainBot);
