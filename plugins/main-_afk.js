@@ -1,22 +1,24 @@
-export function before(m) {
-const user = global.db.data.users[m.sender];
-if (user.afk > -1) {
-conn.reply(m.chat, `🚩 Dejastes De Estar Inactivo\n${user.afkReason ? 'Motivo De La Inactividad: ' + user.afkReason : ''}\n\n*Tiempo Inactivo: ${(new Date - user.afk).toTimeString()}*`, m, rcanal)
-user.afk = -1;
-user.afkReason = '';
+import db from '../lib/database.js'
+
+var handler = async (m, { conn, text }) => {
+
+let user = global.db.data.users[m.sender]
+if (!text) return conn.reply(m.chat, `🎌 *Por favor coloque su motivo para estar afk*\n\nEjemplo, !afk Voy a comer`, m, fake, )
+if (text.length < 10) return conn.reply(m.chat, `🚩 *El motivo es muy corto, minimo 10 carácteres*`, m, fake, )
+user.afk = + new Date
+user.afkReason = text
+conn.reply(m.chat, `🚩 *Estado Afk*
+ 
+Estarás afk hasta que envíes un mensaje
+
+👤 *Usuario:* @${m.sender.split`@`[0]} 
+👀 *Razón:* ${text ? ': ' + text : ''} `, m, { mentions: [m.sender]})
+
 }
-/*const jids = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])];
-for (const jid of jids) {
-const user = global.db.data.users[jid];
-if (!user) {
-continue;
-}
-const afkTime = user.afk;
-if (!afkTime || afkTime < 0) {
-continue;
-}
-const reason = user.afkReason || '';
-conn.reply(m.chat, `🚩 *El Usuario Esta Inactivo No Lo Etiquetes*`, m, rcanal)
-}
-return true;*/
-}
+handler.help = ['afk']
+handler.tags = ['rg']
+handler.command = ['afk']
+
+handler.register = true
+
+export default handler
