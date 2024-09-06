@@ -16,7 +16,7 @@ conn.reply(m.chat, `*pervertido* 🫣`, m, rcanal, )
 /*if (/^a$/i.test(m.text)) {
 conn.reply(m.chat, `*rroz y pollo* 😄👌`, m, rcanal, )
 }*/
-if (!chat.isBanned && m.text.match(/(te amo|teamo|te amo bot|te amo megumin)/gi)) {
+if (!chat.isBanned && m.text.match(/(te amo|teamo|te amo bot|te amo GokuBlack)/gi)) {
   conn.sendMessage(m.chat, {
  stiker:{ url: global.stickeramor}
 }, { quoted: fakegif2});
