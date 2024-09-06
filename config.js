@@ -82,9 +82,9 @@ global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(fa
 
 global.fakegif2 = { key: { participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { videoMessage: { title: 'Black', h: `Black`, seconds: '99999', gifPlayback: true, caption: 'Bienvenido✨', jpegThumbnail: logo5 }}};
 
-global.fakegif3 = { key: { participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { videoMessage: { title: 'Megumin', h: `Hmm`, seconds: '99999', gifPlayback: true, caption: '✨Tu bot Favorito✨', jpegThumbnail: logo3 }}};
+global.fakegif3 = { key: { participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { videoMessage: { title: 'Blacl', h: `Black`, seconds: '99999', gifPlayback: true, caption: '✨Tu bot Favorito✨', jpegThumbnail: logo3 }}};
 
-global.fakegif4 = { key: { participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { videoMessage: { title: 'Megumin', h: `Black`, seconds: '99999', gifPlayback: true, caption: '🪼Sticker🪼', jpegThumbnail: logo5 }}};
+global.fakegif4 = { key: { participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { videoMessage: { title: 'Black', h: `Black`, seconds: '99999', gifPlayback: true, caption: '🪼Sticker🪼', jpegThumbnail: logo5 }}};
 
 global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: 'BLACKLITE', orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
 
