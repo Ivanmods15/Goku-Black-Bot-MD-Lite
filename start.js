@@ -278,7 +278,7 @@ process.on('uncaughtException', console.error)
 /* Echo por: https://github.com/elrebelde21 */
 
 /*async function connectSubBots() {
-const subBotDirectory = './MeguminJadiBot';
+const subBotDirectory = './BlackJadiBot';
 if (!existsSync(subBotDirectory)) {
 console.log('🚩 Goku-Black-Bot-MD-Lite no tiene Sub-Bots vinculados.');
 return;
