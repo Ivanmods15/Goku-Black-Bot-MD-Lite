@@ -1,51 +1,15 @@
-import uploadFile from '../lib/uploadFile.js'
-import uploadImage from '../lib/uploadImage.js'
-import fetch from 'node-fetch'
-
-let handler = async (m) => {
-  let q = m.quoted ? m.quoted : m
-  let mime = (q.msg || q).mimetype || ''
-  if (!mime) return conn.reply(m.chat, '💥 Responde a una *Imagen* o *Vídeo.*', m, rcanal)
-  await m.react(rwait)
-  try {
-  conn.reply(m.chat, global.wait, m, {
-  contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
-  title: packname,
-  body: wm,
-  previewType: 0, thumbnail: icons,
-  sourceUrl: channel }}})
-  let media = await q.download()
-  let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
-  let link = await (isTele ? uploadImage : uploadFile)(media)
-  let img = await (await fetch(`${link}`)).buffer()
-  let txt = `乂  *L I N K - E N L A C E*  乂\n\n`
-      txt += `*» Enlace* : ${link}\n`
-      txt += `*» Acortado* : ${await shortUrl(link)}\n`
-      txt += `*» Tamaño* : ${formatBytes(media.length)}\n`
-      txt += `*» Expiración* : ${isTele ? 'No expira' : 'Desconocido'}\n\n`
-      txt += `> *${dev}*`
-
-await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, fkontak, rcanal)
-await m.react(done)
-} catch {
-await m.react(error)
-}}
-handler.help = ['tourl']
-handler.tags = ['transformador']
-handler.register = true
-handler.command = ['tourl','upload']
-export default handler
-
-function formatBytes(bytes) {
-  if (bytes === 0) {
-    return '0 B';
-  }
-  const sizes = ['B', 'KB', 'MB', 'GB', 'TB']
-  const i = Math.floor(Math.log(bytes) / Math.log(1024))
-  return `${(bytes / 1024 ** i).toFixed(2)} ${sizes[i]}`;
-}
-
-async function shortUrl(url) {
-        let res = await fetch(`https://tinyurl.com/api-create.php?url=${url}`)
-        return await res.text()
-}
+import uploadFile from '../lib/uploadFile.js';
+import uploadImage from '../lib/uploadImage.js';
+const handler = async (m) => {
+  const q = m.quoted ? m.quoted : m;
+  const mime = (q.msg || q).mimetype || '';
+  if (!mime) throw '*[❗𝐈𝐍𝐅𝐎❗] 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙰 𝙰 𝚄𝙽𝙰 𝙸𝙼𝙰𝙶𝙴𝙽 𝙾 𝚅𝙸𝙳𝙴𝙾 𝙴𝙻 𝙲𝚄𝙰𝙻 𝚂𝙴𝚁𝙰 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙸𝙳𝙾 𝙰 𝙴𝙽𝙻𝙰𝙲𝙴*';
+  const media = await q.download();
+  const isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime);
+  const link = await (isTele ? uploadImage : uploadFile)(media);
+  m.reply(`*𝙴𝙽𝙻𝙰𝙲𝙴 𝙰 𝚂𝚄 𝙰𝚁𝙲𝙷𝙸𝚅𝙾:* ${link}`);
+};
+handler.help = ['tourl <reply image>'];
+handler.tags = ['sticker'];
+handler.command = /^(upload|tourl)$/i;
+export default handler;
