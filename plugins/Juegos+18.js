@@ -15,7 +15,7 @@ conn.reply(m.chat, `
 ┃ ❖NO OLVIDEN DE SEGUIRME EN MI CANAL<3
 ┃Créditos:Starrhotss ${paypal}
 ┗━━━━━━━━━━━━━━━━━━━━
- `, m, fake, )
+ `, m, rcanal, )
  
 handler.help = ['M']
 handler.tags = ['m']
