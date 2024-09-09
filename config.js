@@ -16,7 +16,7 @@ global.confirmCode = ''
 global.owner = [
   ['18294868853', '𝐃𝐢𝐨𝐧𝐞𝐢𝐛𝐢', true],
   ['595972157130', '𝐂𝐫𝐞𝐚𝐝𝐨𝐫', true],
-  ['51950148255', '𝙅𝙤𝙨𝙚 𝙈𝙤𝙙𝙨', true]];
+  ['593939005387', '𝙅𝙤stin🍊🔧', true]];
 //• ↳𝑺𝑶𝑳𝑶 𝑴𝑶𝑫𝑬𝑹𝑨𝑫𝑶𝑹𝑬𝑺!
 global.mods = ['18294868853', '595972157130', '51950148255', '', '']
 
@@ -94,8 +94,9 @@ global.fgif2 = { key: {participant: `0@s.whatsapp.net`, ...(false ? { remoteJid:
 global.gp4 = 'https://chat.whatsapp.com/GD0al1LF7Ux2dmPF0fDFYZ' //Grupo Oficial De Goku-Black-Bot-MD-Lite
 global.gp1 = 'https://chat.whatsapp.com/GD0al1LF7Ux2dmPF0fDFYZ' //Grupo 
 global.gp2 = 'https://chat.whatsapp.com/LJKcR8QBJgu37bVFWuhRVn'//
-global.comunidad1 = 'https://chat.whatsapp.com/GPEtINYPyIB6a6S55ZJcAO' //Comunidad Megumin
+global.comunidad1 = 'https://chat.whatsapp.com/GPEtINYPyIB6a6S55ZJcAO' //Comunidad
 global.channel = 'https://whatsapp.com/channel/0029VaYh3Zm4dTnQKQ3VLT0h' //Canal Oficial
+global.Black = '⪛✰ 𝐆𝐨𝐤𝐮 𝐁𝐥𝐚𝐜𝐤 𝐁𝐨𝐭 - 𝐌𝐃 ✰⪜'
 global.paypal = 'Comunicate conmigo al wa.me/593939005387'
 global.yt = 'https://youtube.com/@davidchian4957' //Canal De Youtube
 global.md = 'https://github.com/Ivanmods15/Goku-Black-Bot-MD-Lite' //Github Oficial del bot
