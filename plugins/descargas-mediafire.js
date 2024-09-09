@@ -35,6 +35,7 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
 handler.command = ['mediafire','mediafiredl','dlmediafire']
 handler.register = true;
 handler.group = true;
+handler.diamond = true;
 export default handler;
 
 async function mediafireDl(url) {
