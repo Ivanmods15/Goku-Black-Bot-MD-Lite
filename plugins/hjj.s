@@ -1,49 +1,26 @@
 import fg from 'api-dylux'
-import fetch from 'node-fetch'
-let handler = async (m, { conn, text, args, usedPrefix, command }) => {
-    
-        if (!args[0]) throw `✳️ ${mssg.noLink('TikTok')}\n\n 📌 ${mssg.example} : ${usedPrefix + command} https://vm.tiktok.com/ZMYG92bUh/`
-        if (!args[0].match(/tiktok/gi)) throw `❎ ${mssg.noLink('TikTok')}`
-        m.react(rwait)
-      
-        try {
-        let res = await fetch(global.API('fgmods', '/api/downloader/tiktok', { url: args[0] }, 'apikey'))
-        let data = await res.json()
-
-        if (!data.result.images) {
-            let tex = `
-┌─⊷ *TIKTOK DL* 
-▢ *${mssg.name}:* ${data.result.author.nickname}
-▢ *${mssg.username}:* ${data.result.author.unique_id}
-▢ *${mssg.duration}:* ${data.result.duration}
-▢ *Likes:* ${data.result.digg_count}
-▢ *${mssg.views}:* ${data.result.play_count}
-▢ *${mssg.desc}:* ${data.result.title}
-└───────────
-`
-            conn.sendFile(m.chat, data.result.play, 'tiktok.mp4', tex, m);
-            m.react(done)
-        } else {
-            let cap = `
-▢ *Likes:* ${data.result.digg_count}
-▢ *${mssg.desc}:* ${data.result.title}
-`
-            for (let ttdl of data.result.images) {
-                conn.sendMessage(m.chat, { image: { url: ttdl }, caption: cap }, { quoted: m })
-            }
-            conn.sendFile(m.chat, data.result.play, 'tiktok.mp3', '', m, null, { mimetype: 'audio/mp4' })
-            m.react(done)
-        }
-
-      } catch (error) {
-        m.reply(`❎ ${mssg.error}`)
-    }
-   
+let handler = async (m, { conn, text, args }) => {
+	
+  if (!text) throw `✳️ ${mssg.noUsername}`
+  
+  try {  	
+  let res = await fg.ttStalk(args[0])
+  let txt = `
+┌──「 *TIKTOK STALK* 
+▢ *🔖${mssg.name}:* ${res.name}
+▢ *🔖${mssg.username}:* ${res.username}
+▢ *👥${msag.followers}:* ${res.followers}
+▢ *🫂${msag.follows}:* ${res.following}
+▢ *📌${mssg.desc}:* ${res.desc}
+▢ *🔗${mssg.link}:* https://tiktok.com/${res.username}
+└────────────`
+  await conn.sendFile(m.chat, res.profile, 'tt.png', txt, m)
+} catch {
+  m.reply(`✳️ ${mssg.error}`)
 }
-
-handler.help = ['K']
-handler.tags = ['K']
-handler.command = ['k', 'K', 'k', 'k']
-handler.diamond = true
+}
+handler.help = ['tiktokstalk']
+handler.tags = ['dl']
+handler.command = /^t(tstalk|iktokstalk)$/i
 
 export default handler
