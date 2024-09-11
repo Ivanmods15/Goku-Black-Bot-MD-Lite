@@ -1,11 +1,4 @@
-case "art3":
-            sock.sendMessage(from, {
-              text: `
-              
-              ░░╔══╗░░░░░░░░░░╔══╗░░
-              ░╚╣▐▐╠╝░░╔══╗░░╚╣▐▐╠╝░
-              ░░╚╦╦╝░░╚╣▌▌╠╝░░╚╦╦╝░░
-              ░░░╚╚░░░░╚╦╦╝░░░░╚╚░░░
-              ░░░░░░░░░░╝╝░░░░░░░░░░ `, quoted: info
+case "Ret":
+sock.sendMessage(from, {text: `Acá agendas las reglas de Goku black`, quoted: info
             })
             break
