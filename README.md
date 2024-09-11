@@ -118,3 +118,15 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ## `Dueño:Ivan`
 
 ____
+### **`Superiority Pro Hosting 🤖`**
+<a href="https://dash.superiority.pro/login"><img src="https://qu.ax/TiBm.jpg" height="125px"></a>
+
+<details>
+ <summary><b>:paperclip: Enlaces Importantes</b></summary>
+
+- **Dashboard:** [`Aquí`](https://store.azuraultra-host.pro)
+- **Grupo - Soporte:** [`Aquí`](https://chat.whatsapp.com/LbjpDV0KmZ48iHFSy6n1Gz)
+- **Canal - Oficial:** [`Aquí`](https://whatsapp.com/channel/0029VaoRzN0KmCPMFNe3TD1b)
+
+</details>
+------------------
