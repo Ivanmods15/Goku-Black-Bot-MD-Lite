@@ -41,9 +41,9 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
    
 }
 
-handler.help = ['tiktok']
+handler.help = ['xd']
 handler.tags = ['dl']
-handler.command = ['tiktok', 'tt', 'tiktokimg', 'tiktokslide']
+handler.command = ['tiktok', 'xd', 'tiktokimg', 'tiktokslide']
 handler.diamond = true
 
 export default handler
