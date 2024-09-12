@@ -1,3 +1,5 @@
+//código creado por Jose Xrl agradecimientos 
+
 import fetch from 'node-fetch'
 
 let handler  = async (m, { conn, usedPrefix, command }) => {
