@@ -3,7 +3,7 @@
 import fetch from 'node-fetch'
 
 let handler  = async (m, { conn, usedPrefix, command }) => {
-let img = await (await fetch(`https://qu.ax/TiBm.jpg')`)).buffer()
+let img = await (await fetch(`https://qu.ax/Gdoy.jpg')`)).buffer()
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 let txt = `*¿Tu Nokia es muy lento y necesitas que tu bot esté activo 24/7?* 📱⏳
