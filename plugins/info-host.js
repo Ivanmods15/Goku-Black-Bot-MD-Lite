@@ -1,39 +1,42 @@
-let handler = async (m, { conn, command, usedPrefix }) => {
-let txt = `🚩 *O L Y M P U S - H O S T* 
+import fetch from 'node-fetch'
 
-*¿Quieres un Host de calidad y con bajos precios?*
-Pues te presento a *OlympusHost*, un hosting de calidad con servidores dedicados y precios por debajo de 1USD, estos servidores están destinados a ofrecerte un Uptime 24/7 para que puedas alojar tus proyectos y qué estos funcionen de manera eficaz.
+let handler  = async (m, { conn, usedPrefix, command }) => {
+let img = await (await fetch(`https://telegra.ph/file/c161c058a04477cffede1.mp4`)).buffer()
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
+let txt = `*¿Tu Nokia es muy lento y necesitas que tu bot esté activo 24/7?* 📱⏳
+
+¡Tranquilo, tenemos la solución perfecta para ti! 🎉 Mantén tu bot funcionando sin interrupciones con nuestros servidores, Ofrecemos servidores gratuitos y de pago a precios súper accesibles, al alcance de todos. 💸 
+
+🖥️ *Totalmente compatible con GokuBlack-Bot-MD,* Disfruta al máximo de su potencial en nuestros servidores de alto rendimiento, asegurando una experiencia fluida y de alta calidad. El staff de GokuBlackBot y Superiority Host se encarga de que disfrutes de todas sus funciones al máximo. 💖✨
 
 🟢 \`\`\`Información del Host\`\`\`
 
-🔮 *Dashboard:* 
-• https://dash.olympus-host.xyz
+💻 *Página:*
+https://dash.superiority.pro
 
-🧃 *Panel:*
-• https://panel.olympus-host.xyz
+*🟢 Dashboard:*
+https://dash.superiority.pro
 
-💥 *Canal:*
-• https://whatsapp.com/channel/0029ValCkNT2ER6gHWFRQ71J
+⚙️ *Panel*
+https://panel.superiority.pro
 
-⚜️ *Contacto (Mateo)*
-https://wa.me/593979133620
+🧸 *Comunidad de WhatsApp:*
+https://chat.whatsapp.com/HZprUWDGFKdCm7QBNXQQRQ
 
-> *Únete a está comunidad y disfruta de un servicio de calidad :D*` 
-await conn.sendMessage(m.chat, { text: txt,
-contextInfo:{
-forwardingScore: 9999999,
-isForwarded: false, 
-"externalAdReply": {
-"showAdAttribution": true,
-"containsAutoReply": true,
-title: `🔵 O L Y M P U S - H O S T 🔵`,
-body: `⚜️ Super Hosting 24/7 ⚜️`,
-"previewType": "PHOTO",
-thumbnailUrl: 'https://qu.ax/waCu.jpg', 
-sourceUrl: 'https://dash.olympus-host.xyz'}}},
-{ quoted: fkontak})
+✨ *Grupo General Superiority (Whatsapp)*
+https://chat.whatsapp.com/Feg4luP8CgHFFrbD65Wj7B
+
+🧡 *Canal de WhatsApp:*
+https://whatsapp.com/channel/0029VaoRzN0KmCPMFNe3TD1b
+
+🗣📲 *Contacto:*
+• wa.me/51918425805
+
+No esperes más y lleva tu bot al siguiente nivel con nuestro servicio de alojamiento. ¡Es fácil, rápido y económico! 💪🚀`
+await conn.sendFile(m.chat, img, "Thumbnail.jpg", txt, m, null, rcanal)
 }
-handler.tags =['main'] 
-handler.help = ['host', 'hosting'] 
-handler.command = ['host', 'olympus', 'olympushost', 'hosting']
+handler.help = ['Superiority']
+handler.tags = ['Host']
+handler.command = /^(Superiority)$/i
 export default handler
