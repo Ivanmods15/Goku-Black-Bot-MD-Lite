@@ -7,8 +7,8 @@ let res
 try {
 conn.reply(m.chat, `🕒 *Descargando su video de facebook.*`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
-title: '♡  ͜ ۬︵࣪᷼⏜݊᷼𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨⏜࣪᷼︵۬ ͜ ',
-body: '<(✿◠‿◠)> 𝙈𝙚𝙜𝙪𝙢𝙞𝙣🔥',
+title: '𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨',
+body: 'GokuBlack',
 previewType: 0, thumbnail: logo8,
 sourceUrl: channel }}})
 await m.react(rwait)
