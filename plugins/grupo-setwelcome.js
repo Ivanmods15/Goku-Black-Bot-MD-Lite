@@ -1,18 +1,11 @@
-var handler = async (m, { conn, text, isROwner, isOwner }) => {
-
-if (text) {
-if (isROwner) global.conn.welcome = text
-else if (isOwner) conn.welcome = text
-else global.db.data.chats.sWelcome = text
-
-conn.reply(m.chat, '✅ *La bienvenida se a configurado*', m, fake, )
-} else return conn.reply(m.chat, '🎌 *Ingrese el texto que quiere que envie al unirse una persona*\n\nPuede usar @user para etiquetar', m, fake, )
-}
-handler.help = ['setwelcome']
-handler.tags = ['grupo']
-handler.command = /^setwelcome$/i
-
-handler.group = true
-handler.admin = true
-
-export default handler
+const handler = async (m, {conn, text, isROwner, isOwner}) => {
+  if (text) {
+    global.db.data.chats[m.chat].sWelcome = text;
+    m.reply('[❗] MENSAJE DE BIENVENIDA CONFIGURADO CORRECTAMENTE PARA ESTE GRUPO*');
+  } else throw `[❗] INGRESE EL MENSAJE DE BIENVENIDA QUE DESEE AGREGAR, USE:*\n*- @user (mención)*\n*- @group (nombre de grupo)*\n*- @desc (description de grupo)*`;
+};
+handler.help = ['setwelcome <text>'];
+handler.tags = ['group'];
+handler.command = ['setwelcome'];
+handler.admin = true;
+export default handler;
