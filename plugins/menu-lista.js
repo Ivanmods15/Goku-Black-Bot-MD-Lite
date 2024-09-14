@@ -497,12 +497,12 @@ let _0x1a2b8a = _0x2dafbc[_0x13bbaf];
 return _0x1a2b8a;
 }, _0x13bb(_0x16c7de, _0x1a27b8);
 }
-let ti1 = '𝐸𝑥𝑝𝑙𝑜𝑠𝑖𝑜𝑛!!'
+let ti1 = 'El Bot mas Good!!'
 let ti2 = '𝐻𝑜𝑙𝑎!!'
 let ti3 = '𝐆𝐎𝐊𝐔-𝐁𝐋𝐀𝐂𝐊-𝐁𝐎𝐓-𝐌𝐃-𝐋𝐈𝐓𝐄'
 let ti4 = '𝐓𝐄𝐀𝐌 𝐁𝐋𝐀𝐂𝐊'
-let ti5 = '𝐵𝑂𝑂𝑀𝑀!!!!'
-let ti6 = '𝐸𝑙 𝐵𝑜𝑡 𝑀𝑎𝑠 𝐸𝑥𝑝𝑜𝑠𝑖𝑣𝑜!'
+let ti5 = 'KA𝐵𝑂𝑂𝑀𝑀!!!!'
+let ti6 = '𝐸𝑙 𝐵𝑜𝑡 𝑀𝑎𝑠 Good!'
 let ti = `${pickRandom([ti1,ti2,ti3,ti4,ti5,ti6])}`
 let buttonMessage = {
     'document': {
