@@ -1,65 +1,21 @@
-import axios from 'axios' 
-  
- let handler = async (m, {  
- conn, text, command, usedPrefix 
- }) => { 
- if (!text) return m.reply(`*INGRESE UN ENLACE*\n\nFORMA CORRECTA DE USAR *${usedPrefix + command}* <url>\n\n*EJEMPLO :* ${usedPrefix + command} https://github.com/GataNina-Li`) 
- m.reply("*🚀 C A R G A N D O . . .*") 
- var phone = await ssweb(text, 'phone') 
- var desktop = await ssweb(text, 'desktop') 
- var tablet = await ssweb(text, 'tablet') 
- var res = `` 
- if (command === 'sshp') { 
- await conn.sendFile(m.chat, phone.result, '',res, m, false) 
- } 
- if (command === 'ssweb' || command === 'sstablet') { 
- await conn.sendFile(m.chat, tablet.result, '',res, m, false) 
- } 
- if (command === 'sspc') { 
- await conn.sendFile(m.chat, desktop.result, '',res, m, false) 
- } 
- } 
- handler.help = ['ssweb','sspc','sshp','sstablet'].map(v => v + ' <url>') 
- handler.tags = ['internet'] 
- handler.command = /^(ssweb|sstablet|sspc|sshp)$/i 
-  
- handler.limit = false 
-  
- export default handler 
-  
- async function ssweb(url, device = 'desktop'){ 
-      return new Promise((resolve, reject) => { 
-           const base = 'https://www.screenshotmachine.com' 
-           const param = { 
-             url: url, 
-             device: device, 
-             cacheLimit: 0 
-           } 
-           axios({url: base + '/capture.php', 
-                method: 'POST', 
-                data: new URLSearchParams(Object.entries(param)), 
-                headers: { 
-                     'content-type': 'application/x-www-form-urlencoded; charset=UTF-8' 
-                } 
-           }).then((data) => { 
-                const cookies = data.headers['set-cookie'] 
-                if (data.data.status == 'success') { 
-                     axios.get(base + '/' + data.data.link, { 
-                          headers: { 
-                               'cookie': cookies.join('') 
-                          }, 
-                          responseType: 'arraybuffer' 
-                     }).then(({ data }) => { 
-                        let result = { 
-                             status: 200, 
-                             author: 'Azami', 
-                             result: data 
-                         } 
-                          resolve(result) 
-                     }) 
-                } else { 
-                     reject({ status: 404, author: 'Azami', message: data.data }) 
-                } 
-           }).catch(reject) 
-      }) 
- }
+import fetch from 'node-fetch'
+let handler = async (m, { conn, command, args }) => {
+if (!args[0]) return conn.reply(m.chat, '⚠️ *Ingrese el Link de una página.*', m, rcanal)
+try {
+await m.react(rwait)
+conn.reply(m.chat, '🚀 Buscando su información....', m, {
+contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
+title: packname,
+body: dev,
+previewType: 0, thumbnail: icons, 
+sourceUrl: channel }}})
+let ss = await (await fetch(`https://image.thum.io/get/fullpage/${args[0]}`)).buffer()
+conn.sendFile(m.chat, ss, 'error.png', args[0], fkontak)
+await m.react(done)
+} catch {
+return conn.reply(m.chat, '🚩 Ocurrió un error.', m, fake)
+await m.react(error)}}
+handler.help = ['ssweb', 'ss']
+handler.tags = ['tools']
+handler.command = ['ssweb', 'ss']
+export default handler
