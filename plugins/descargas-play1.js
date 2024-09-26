@@ -6,7 +6,7 @@ import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 
 var handler = async (m, { conn, command, args, text, usedPrefix }) => {
 
-if (!text) return conn.reply(m.chat, `🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *іᥒgrᥱsᥱ ᥱᥣ ᥒ᥆mᑲrᥱ ძᥱ ᥙᥒ ᥎іძᥱ᥆ ძᥱ ᥡ᥆ᥙ𝗍ᥙᑲᥱ*\n\n[ 💡 ] ᥱȷᥱm⍴ᥣ᥆, !${command} New West - Those Eyes`,  m, fake, )
+if (!text) return conn.reply(m.chat, `⚠️ Error ⚠️ *ingrese el nombre de un video de youTube*\n\n[ 🏮 ] ejemplo, !${command} Menina do paraguay - leleto`,  m, fake, )
 m.react(rwait)
 
 try {
