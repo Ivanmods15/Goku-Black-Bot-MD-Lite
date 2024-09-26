@@ -18,7 +18,7 @@ additionalText = 'audio'
 } else if (command === 'play2') {
 additionalText = 'video'}
 
-let texto1 = `╭──────────
+let texto1 = `╭──────────\n
  │ *∘ 🍭 descarga* 
  ${yt_play[0].title} 
   
