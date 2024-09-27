@@ -13,7 +13,7 @@ if (/webp|image|video/g.test(mime)) {
 if (/video/g.test(mime)) if ((q.msg || q).seconds > 8) return m.reply(`☁️ *¡El video no puede durar mas de 8 segundos!*`)
 let img = await q.download?.()
 
-if (!img) return conn.reply(m.chat, `⚠️ *_La conversión ha fallado, intenta enviar primero imagen/video/gif y luego responde con el comando._*`, m, rcanal)
+if (!img) return conn.reply(m.chat, `_*ᯓᡣ𐭩 Y la imagen?, recuerda que los videos deben de durar 6 a 8 segundos.𖥔 ݁ ˖*_`, m, rcanal)
 
 let out
 try {
@@ -31,7 +31,7 @@ stiker = await sticker(false, out, global.packsticker, global.author)
 } else if (args[0]) {
 if (isUrl(args[0])) stiker = await sticker(false, args[0], global.packsticker, global.author)
 
-else return m.reply(`💫 El url es incorrecto`)
+else return m.reply(`꒰ᐢ. .ᐢ꒱₊˚⊹ El url es incorrecto`)
 
 }
 } catch (e) {
