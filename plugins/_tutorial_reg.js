@@ -1,18 +1,14 @@
-let handler = async (m, { conn }) => {
-  const usuario = m.pushName || 'Usuario';
-  const videoUrl = 'https://telegra.ph/file/330a7838421e8f555b7be.mp4';
+//Codigo creado por Ivan 
+import fetch from 'node-fetch'
 
-  const texto = `Hola @${m.sender.split('@')[0]} SOMOS TEAM FELIX ROJAS GRACIAS POR UTILIZAR ESTE COMANDO❤️`;
-
-  const options = {
-    quoted: m,
-    caption: texto,
-    mentions: [m.sender]
-  };
-
-  await conn.sendMessage(m.chat, { video: { url: videoUrl }, ...options });
-};
-
-handler.command = ['Felix']
-
-export default handler;
+let handler  = async (m, { conn, usedPrefix, command }) => {
+let img = await (await fetch(`https://telegra.ph/file/c161c058a04477cffede1.mp4`)).buffer()
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
+let txt = `*Mincho😻*`
+await conn.sendFile(m.chat, img, "Thumbnail.jpg", txt, m, null, rcanal)
+}
+handler.help = ['Mincho']
+handler.tags = ['Mincho']
+handler.command = /^(Mincho)$/i
+export default handler
