@@ -5,9 +5,9 @@ let runtime = `${global.packname}
 ✨ *Yo estuve activo:* ${rTime(uptime)}`
 conn.reply(m.chat, runtime, m, { contextInfo: { externalAdReply: { mediaUrl: false, mediaType: 1, description: false, title: packname, body: dev, previewType: 0, thumbnail: icons, sourceUrl: channel}}})
 }
-handler.help = ['Ac']
-handler.tags = ['Ac']
-handler.command = ['Ac', 'Ac']
+handler.help = ['a']
+handler.tags = ['a']
+handler.command = ['a', 'a']
 
 export default handler
 
