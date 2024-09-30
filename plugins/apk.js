@@ -12,4 +12,4 @@ await conn.sendMessage(m.chat, { document: { url: data.dllink }, mimetype: 'appl
 }}
 handler.command = /^(apk)$/i
 handler.limit = 5
-export default handler*/
+export default handler
