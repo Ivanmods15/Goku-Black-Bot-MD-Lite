@@ -1,4 +1,4 @@
-/*import { search, download } from 'aptoide-scraper'
+import { search, download } from 'aptoide-scraper'
 let handler = async (m, { conn, usedPrefix, command, text }) => {
 if (!text) throw `*Error*\n[ 💡 ] Ejemplo ${usedPrefix + command} WhatsApp Plus`
 try {
