@@ -1,34 +1,49 @@
-import { search, download } from 'aptoide-scraper'
+import axios from 'axios';
+import cheerio from 'cheerio';
 
-var handler = async (m, {conn, usedPrefix, command, text}) => {
-if (!text) return conn.reply(m.chat, '🚩 *Ingrese el nombre de la apk para descargarlo.*', m, rcanal)
-try {
-await m.react(rwait)
-conn.reply(m.chat, '🚩 *Descargando su aplicación...*', m, {
-contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
-title: packname,
-body: dev,
-previewType: 0, thumbnail: icons,
-sourceUrl: channel }}})
-let searchA = await search(text)
-let data5 = await download(searchA[0].id)
-let txt = `*乂  APTOIDE - DESCARGAS* 乂\n\n`
-txt += `🍟 *Nombre* : ${data5.name}\n`
-txt += `🚩 *Package* : ${data5.package}\n`
-txt += `🪴 *Update* : ${data5.lastup}\n`
-txt += `⚖ *Peso* :  ${data5.size}`
-await conn.sendFile(m.chat, data5.icon, 'thumbnail.jpg', txt, m, null, rcanal) 
-await m.react(done)  
-if (data5.size.includes('GB') || data5.size.replace(' MB', '') > 999) {
-return await conn.reply(m.chat, '🛑 *El archivo es demaciado pesado*', m, rcanal )}
-await conn.sendMessage(m.chat, {document: {url: data5.dllink}, mimetype: 'application/vnd.android.package-archive', fileName: data5.name + '.apk', caption: null}, {quoted: fkontak})
-} catch {
-return conn.reply(m.chat, '🛑 *Ocurrió un fallo*', m, rcanal )}}
+const apkpureApi = 'https://apkpure.com/api/v2/search?q=';
+const apkpureDownloadApi = 'https://apkpure.com/api/v2/download?id=';
 
+async function searchApk(text) {
+  const response = await axios.get(`${apkpureApi}${encodeURIComponent(text)}`);
+  const data = response.data;
+  return data.results;
+}
+
+async function downloadApk(id) {
+  const response = await axios.get(`${apkpureDownloadApi}${id}`);
+  const data = response.data;
+  return data;
+}
+
+let handler = async (m, { conn, usedPrefix, command, text }) => {
+  if (!text) throw `*ACCIÓN MAL USADA\n\n *ESCRIBA EL NOMBRE DEL APK*, `;
+  try {
+    const searchResults = await searchApk(text);
+    const apkData = await downloadApk(searchResults[0].id);
+    const response = `${packname}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃💫 𝙉𝙤𝙢𝙗𝙧𝙚: ${apkData.name}
+┃📦 𝙋𝘼𝘾𝙆𝘼𝙂𝙀: ${apkData.package}
+┃🕒 𝙐𝙡𝙩𝙞𝙢𝙖 𝘼𝙘𝙩𝙪𝙖𝙡𝙞𝙯𝙖𝙘𝙞𝙤́𝙣: ${apkData.lastup}
+┃💪 𝙏𝙖𝙣𝙖𝙣̃𝙤: ${apkData.size}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙣𝙙𝙤 𝘼𝙋𝙆 🚀🚀🚀`;
+    await conn.sendMessage(m.chat, { image: { url: apkData.icon }, caption: response }, { quoted: m });
+    if (apkData.size.includes('GB') || apkData.size.replace(' MB', '') > 999) {
+      return await conn.sendMessage(m.chat, { text: 'EL APK ES MUY PESADO.',  }, { quoted: m });
+    }
+    await conn.sendMessage(m.chat, { document: { url: apkData.dllink }, mimetype: 'application/vnd.android.package-archive', fileName: apkData.name + '.apk', caption: null }, { quoted: m });
+  } catch (e) {
+    await conn.reply(m.chat, `𝙊𝙘𝙪𝙧𝙧𝙞𝙤 𝙪𝙣 𝙚𝙧𝙧𝙤𝙧\n\n${e}`, m);
+    console.log(`❗❗𝙀𝙧𝙧𝙤𝙧 ${usedPrefix + command} ❗❗`);
+    console.log(e);
+    handler.limit = false;
+  }
+};
 handler.tags = ['descargas']
-handler.help = ['apkmod']
-handler.command = ['apk', 'modapk', 'aptoide']
-handler.register = true
-handler.estrellas = 1
-
-export default handler
+handler.help = ['apk']
+handler.command = /^(apkp|apkpure|apkdl)$/i;
+handler.register = true;
+handler.limit = 2;
+export default handler;
