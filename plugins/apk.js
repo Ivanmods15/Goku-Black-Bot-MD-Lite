@@ -1,4 +1,4 @@
-import { search, download } from 'aptoide-scraper'
+import { search, download } from '@bochilteam/scraper'
 
 var handler = async (m, {conn, usedPrefix, command, text}) => {
 if (!text) return conn.reply(m.chat, '💥 *Ingrese el nombre de la apk para descargarlo.*', m, rcanal)
