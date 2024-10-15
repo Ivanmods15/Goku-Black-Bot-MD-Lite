@@ -38,14 +38,14 @@ const defaultMenu = {
 ║ ✧ 🌀 Tipo Bot: Goku-Black-Bot-MD-Lite
 ║ ✧ 🚩 Modo: Público
 ║ ✧ 📚 Baileys: Multi Device
-║ ✧ ⏱️ Tiempo Activo: %muptime
+║ ✧ ⏱️ Tiempo Activo: %uptime
 ║ ✧ 👤 Usuarios registrados: %totalreg
 ╚═════════════════════✦
 %readmore
 ╔══✦「 Info del Usuario 」✦══╗
 ║ ✧ 💌 Cliente: %name
 ║ ✧ ⚡ Experiencia: %exp
-║ ✧ 🍪 cookies: %cookies
+║ ✧ 🍪 cookies: %estrellas
 ║ ✧ 🫧 Nivel: %level
 ║ ✧ 🛡️ Rango: %role
 ╚═════════════════════✦
@@ -53,9 +53,9 @@ const defaultMenu = {
 %readmore
 *☆─ׅ─ׄ★─ׅ─ׄ✮─ׅ─ׄ★─ׅ─ׄ☆─ׅ─ׄ☆─ׅ─ׄ★─ׅ─ׄ✮─ׅ─ׄ★─ׅ─ׄ☆*
 
-\t*𓇽✦✧ 𝗟𝗜𝗦𝗧𝗔 𖠙 𝗗𝗘 𓆺 𝗖𝗢𝗠𝗔𝗡𝗗𝗢𝗦 ✧✦𓇽* 
+\t*𝗟𝗜𝗦𝗧𝗔 𝗗𝗘 𝗖𝗢𝗠𝗔𝗡𝗗𝗢𝗦* 
 `.trimStart(),
-      header: '.    ╭─◉⧫┈⎯☠️⦿𖠙✦⧫◉─╮\n╭╼⬪࣪ꥈ𑁍⃪࣭۪ٜ݊݊݊݊݊໑ٜ࣪ %category ໑⃪࣭۪ٜ݊݊݊݊𑁍ꥈ࣪⬪\n┃֪࣪   ╰─◉⧫┈⎯☠️❈⧫⎯◉─╯',
+      header: '.    ╭─◉⧫┈⎯🫧⦿𖠙✦⧫◉─╮\n╭╼⬪࣪ꥈ𑁍⃪࣭۪ٜ݊݊݊݊݊໑ٜ࣪ %category ໑⃪࣭۪ٜ݊݊݊݊𑁍ꥈ࣪⬪\n┃֪࣪   ╰─◉⧫┈⎯🫧❈⧫⎯◉─╯',
   body: '├ׁ̟̇❍✎ %cmd\n',
   footer: '╚═⎯⧫❈⠄⭎⧫❈⠄⭎⧫❈⠄⭎⧫❈⎯═╝\n',
   after: `> ${dev}`
@@ -173,7 +173,7 @@ const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegr
 
 // await conn.reply(m.chat, '🍟 Enviando el menú.....', m, rcanal)
 
-await m.react('⭐️') 
+await m.react('🫧') 
 
 //await conn.sendFile(m.chat, imagen1, 'yaemori.jpg', text.trim(), fkontak, null, rcanal)
 
