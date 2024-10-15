@@ -35,7 +35,7 @@ const defaultMenu = {
 
 ╔══✦「 Info del Bot 」✦══╗
 ║ ✧ 👩‍💻 Creador: Ivan
-║ ✧ ☠️ Tipo Bot: Goku-Black-Bot-MD-Lite
+║ ✧ 🌀 Tipo Bot: Goku-Black-Bot-MD-Lite
 ║ ✧ 🚩 Modo: Público
 ║ ✧ 📚 Baileys: Multi Device
 ║ ✧ ⏱️ Tiempo Activo: %muptime
@@ -45,9 +45,9 @@ const defaultMenu = {
 ╔══✦「 Info del Usuario 」✦══╗
 ║ ✧ 💌 Cliente: %name
 ║ ✧ ⚡ Experiencia: %exp
-║ ✧ 🌟 Estrellas: %estrellas
-║ ✧ 🐢 Nivel: %level
-║ ✧ 💪 Rango: %role
+║ ✧ 🍪 cookies: %cookies
+║ ✧ 🫧 Nivel: %level
+║ ✧ 🛡️ Rango: %role
 ╚═════════════════════✦
 
 %readmore
