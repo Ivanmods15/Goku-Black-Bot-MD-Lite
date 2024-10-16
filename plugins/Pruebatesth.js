@@ -55,5 +55,5 @@ await conn.sendMessage(m.chat, { delete: stickerMessage.key });
 }
 }
 };
-handler.command = /^fgmp6|dlmp6|getvid|yt(v|mp6)?$/i;
+handler.command = /^plays2|play2|Play2|yt(v|mp6)?$/i;
 export default handler;
