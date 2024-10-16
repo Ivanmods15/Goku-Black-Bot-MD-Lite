@@ -24,7 +24,7 @@ const texto1 = `
 ├» ${yt_play[0].url}
 ╰ׁ̻۫─۪۬─۟─۪─۫─۪۬─۟─۪─۟─۪۬─۟─۪─۟─۪۬─۟─۪─۟┄۪۬┄۟┄۪┈۟┈۪`.trim()
 
-await conn.sendButton(m.chat, wm, texto1, yt_play[0].thumbnail, [['Menu 🌀', `${usedPrefix}menu`],['Audio 🪨',`${usedPrefix}play5 ${yt_play[0].url}`],['Video 🫧',`${usedPrefix}play6 ${yt_play[0].url}`]], null, null, fgif2)
+await conn.sendButton(m.chat, wm, texto1, yt_play[0].thumbnail, [['Menu 🌀', `${usedPrefix}menu`],['Audio 🪨',`${usedPrefix}play5 ${yt_play[0].url}`],['Video 🫧',`${usedPrefix}play2 ${yt_play[0].url}`]], null, null, fgif2)
 } catch (e) {
 await conn.reply(m.chat, `*[ ! ] Hubo un error en el comando por favor intenta mas tarde:(*`, fkontak, m, rcanal)
 console.log(`Error ${usedPrefix + command} (⁠;⁠ŏ⁠﹏⁠ŏ⁠)`)
