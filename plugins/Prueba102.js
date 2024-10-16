@@ -57,6 +57,6 @@ let url = apislap.url;
     }
 };
 
-handler.command = /^fgmp3|dlmp5|getaud|yt(a|mp5)$/i;
+handler.command = /^Play|Play|play|yt(a|mp5)$/i;
 
 export default handler;
