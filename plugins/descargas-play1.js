@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 import yts from 'yt-search';
 import ytdl from 'ytdl-core';
 import axios from 'axios';
-import {youtubedl, youtubedlv2} from '@bochilteam/scraper';
+import {youtubedl, youtubedlv2} from '@StarlightsTeam/Scraper';
 const handler = async (m, {conn, command, args, text, usedPrefix}) => {
 
 if (command == 'play' || command == 'play2') {
