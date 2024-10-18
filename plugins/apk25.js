@@ -1,4 +1,4 @@
-import Starlights from "@StarlightsTeam/Scraper"
+import { search, download } from '@whiskeysockets/baileys'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 if (!text) return conn.reply(m.chat, `*• Ingresa el nombre de la aplicación que deseas descargar.*\n\nEjemplo:\n*${usedPrefix + command}* WhatsApp`, m, rcanal)
