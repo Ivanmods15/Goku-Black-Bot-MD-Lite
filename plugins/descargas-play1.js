@@ -27,7 +27,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
 ☆ 🖋️ 𝐀𝐮𝐭𝐨𝐫: ${yt_play[0].author.name}
 ☆ 🎞️ 𝐂𝐚𝐧𝐚𝐥: ${yt_play[0].author.url}
 ☆ 📄 𝐋𝐢𝐧𝐤: ${yt_play[0].url}\n
-☆ _𝙴𝙽𝚅𝙸𝙰𝙽𝙳𝙾 ${additionalText}, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽𝙾𝚂 𝚂𝙴𝙶𝚄𝙽𝙳𝙾𝚂．．．_\n*Goku-Black-Bot-MD*`.trim();
+☆ _𝙴𝙽𝚅𝙸𝙰𝙽𝙳𝙾 ${additionalText}, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽𝙾𝚂 𝚂𝙴𝙶𝚄𝙽𝙳𝙾𝚂．．．_\n*Goku-Black-Bot-MD*` rcanal, .trim();
     conn.sendMessage(m.chat, {image: {url: yt_play[0].thumbnail}, caption: texto1}, {quoted: m});
     if (command == 'play') {
     try {    
