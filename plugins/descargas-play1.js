@@ -1,54 +1,154 @@
-import fetch from 'node-fetch';
-import yts from 'yt-search';
-import ytdl from 'ytdl-core';
-import axios from 'axios';
-import {youtubedl, youtubedlv2} from '@StarlightsTeam/Scraper';
-const handler = async (m, {conn, command, args, text, usedPrefix}) => {
+import Starlights from '@StarlightsTeam/Scraper'
+import yts from 'yt-search'
+import fetch from 'node-fetch' 
 
-if (command == 'play' || command == 'play2') {
-if (!text) return conn.reply(m.chat, `*Que esta buscado?*\n*Ingrese el nombre del la canción*\n\n*Ejemplo:*\n#play vaicocota skorp`, m, {contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: wm, body: '', previewType: 0, thumbnail: img.getRandom(), sourceUrl: redes.getRandom()}}})
-const yt_play = await search(args.join(' '))
-const texto1 = `📌 *Título* : ${yt_play[0].title}\n📆 *Publicado:* ${yt_play[0].ago}\n⌚ *Duración:* ${secondString(yt_play[0].duration.seconds)}`.trim()
+let handler = async (m, { conn, args, usedPrefix, text, command }) => {
+    if (!text) return conn.reply(m.chat, `*🚩 Ingresa un título o enlace de un video o música de YouTube.*`, m)
 
-await conn.sendButton(m.chat, texto1, botname, yt_play[0].thumbnail, [['Audio', `${usedPrefix}ytmp3 ${yt_play[0].url}`], ['video', `${usedPrefix}ytmp4 ${yt_play[0].url}`]], null, null, m)
+    try {
+        let vid;
+
+        // Verificar si el texto ingresado es un enlace de YouTube
+        if (text.match(/^(https?:\/\/)?(www\.)?(youtube\.com|youtu\.?be)\/.+$/gi)) {
+            await m.react('🕓')
+            let res = await yts({ videoId: text.split('v=')[1] || text.split('/')[3] }) // Obtén el video directamente
+            vid = res
+        } else {
+            await m.react('🕓')
+            let res = await yts(text)
+            vid = res.videos[0] // Obtén el primer video de la búsqueda
+        }
+
+        if (!vid) return conn.reply(m.chat, `*☓ No se encontraron resultados para tu búsqueda.*`, m)
+
+        if (command === "play" || command === "play2") {
+            const infoTexto = `乂  Y O U T U B E   M U S I C\n
+            ✩ *Título ∙* ${vid.title}\n
+            ✩ *Duración ∙* ${vid.timestamp}\n
+            ✩ *Visitas ∙* ${vid.views}\n
+            ✩ *Autor ∙* ${vid.author.name}\n
+            ✩ *Publicado ∙* ${vid.ago}\n
+            ✩ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`.trim()
+
+            await conn.sendButton(m.chat, infoTexto, wm, vid.thumbnail, [
+                ['Audio 📀', `${usedPrefix}mp3 ${vid.url}`],
+                ['Video 🎥', `${usedPrefix}mp4 ${vid.url}`],
+                ['AudioDoc 📀', `${usedPrefix}mp3doc ${vid.url}`],
+                ['VideoDoc 🎥', `${usedPrefix}mp4doc ${vid.url}`]
+            ], null, [['Canal', `https://whatsapp.com/channel/0029VaAN15BJP21BYCJ3tH04`]], m)
+        } else {
+            let q = command.includes('mp4') ? '360p' : '128kbps'
+            let dl_url, size, title
+
+            if (command === 'mp3' || command === 'mp3doc') {
+                let yt = await fg.yta(vid.url, q)
+                dl_url = yt.dl_url
+                size = yt.size.split('MB')[0]
+                title = yt.title
+            } else if (command === 'mp4' || command === 'mp4doc') {
+                let yt = await fg.ytv(vid.url, q)
+                dl_url = yt.dl_url
+                size = yt.size.split('MB')[0]
+                title = yt.title
+            }
+
+            const limit = 100
+            if (size >= limit) {
+                return conn.reply(m.chat, `El archivo pesa más de ${limit} MB, se canceló la descarga.`, m).then(_ => m.react('✖️'))
+            }
+
+            if (command === 'mp3') {
+                await conn.sendMessage(m.chat, { 
+                    audio: { url: dl_url }, 
+                    mimetype: "audio/mpeg", 
+                    fileName: `${title}.mp3`, 
+                    quoted: m, 
+                    contextInfo: {
+                        'forwardingScore': 200,
+                        'isForwarded': true,
+                        externalAdReply:{
+                            showAdAttribution: false,
+                            title: `${title}`,
+                            body: `${vid.author.name}`,
+                            mediaType: 2, 
+                            sourceUrl: `${vid.url}`,
+                            thumbnail: await (await fetch(vid.thumbnail)).buffer()
+                        }
+                    }
+                }, { quoted: m })
+            } else if (command === 'mp4') {
+                await conn.sendMessage(m.chat, { 
+                    video: { url: dl_url }, 
+                    caption: `${title}\n⇆ㅤㅤ◁ㅤㅤ❚❚ㅤㅤ▷ㅤㅤ↻\n00:15 ━━━━●────── ${vid.timestamp}`, 
+                    mimetype: 'video/mp4', 
+                    fileName: `${title}.mp4`, 
+                    quoted: m, 
+                    contextInfo: {
+                        'forwardingScore': 200,
+                        'isForwarded': true,
+                        externalAdReply:{
+                            showAdAttribution: false,
+                            title: `${title}`,
+                            body: `${vid.author.name}`,
+                            mediaType: 2, 
+                            sourceUrl: `${vid.url}`,
+                            thumbnail: await (await fetch(vid.thumbnail)).buffer()
+                        }
+                    }
+                }, { quoted: m })
+            } else if (command === 'mp3doc') {
+                await conn.sendMessage(m.chat, { 
+                    document: { url: dl_url }, 
+                    mimetype: "audio/mpeg", 
+                    fileName: `${title}.mp3`, 
+                    quoted: m, 
+                    contextInfo: {
+                        'forwardingScore': 200,
+                        'isForwarded': true,
+                        externalAdReply:{
+                            showAdAttribution: false,
+                            title: `${title}`,
+                            body: `${vid.author.name}`,
+                            mediaType: 2, 
+                            sourceUrl: `${vid.url}`,
+                            thumbnail: await (await fetch(vid.thumbnail)).buffer()
+                        }
+                    }
+                }, { quoted: m })
+            } else if (command === 'mp4doc') {
+                await conn.sendMessage(m.chat, { 
+                    document: { url: dl_url }, 
+                    caption: `${title}\n⇆ㅤㅤ◁ㅤㅤ❚❚ㅤㅤ▷ㅤㅤ↻\n00:15 ━━━━●────── ${vid.timestamp}`, 
+                    mimetype: 'video/mp4', 
+                    fileName: `${title}.mp4`, 
+                    quoted: m, 
+                    contextInfo: {
+                        'forwardingScore': 200,
+                        'isForwarded': true,
+                        externalAdReply:{
+                            showAdAttribution: false,
+                            title: `${title}`,
+                            body: `${vid.author.name}`,
+                            mediaType: 2, 
+                            sourceUrl: `${vid.url}`,
+                            thumbnail: await (await fetch(vid.thumbnail)).buffer()
+                        }
+                    }
+                }, { quoted: m })
+            }
+
+            await m.react('✅')
+        }
+    } catch (error) {
+        console.error(error)
+        await conn.reply(m.chat, `*☓ Ocurrió un error inesperado.*`, m).then(_ => m.react('✖️'))
+    }
 }
 
-if (command == 'play3' || command == 'play4') {
-if (!text) return conn.reply(m.chat, `*Que esta buscado? *\n*Ingrese el nombre del la canción*\n\n*Ejemplo:*\n#play vaicocota skorp`, m, {contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: wm, body: '', previewType: 0, thumbnail: img.getRandom(), sourceUrl: redes.getRandom()}}})
-const yt_play = await search(args.join(' '))
-const texto1 = `📌 *Título* : ${yt_play[0].title}\n📆 *Publicado:* ${yt_play[0].ago}\n⌚ *Duración:* ${secondString(yt_play[0].duration.seconds)}\n👀 *Vistas:* ${MilesNumber(yt_play[0].views)}`.trim()
-
-await conn.sendButton(m.chat, texto1, botname, yt_play[0].thumbnail, [['Audio', `${usedPrefix}ytmp3 ${yt_play[0].url}`], ['video', `${usedPrefix}ytmp4 ${yt_play[0].url}`], ['Mas resultados', `${usedPrefix}yts ${text}`]], null, null, m)
-}}
-handler.help = ['play', 'play2'];
-handler.tags = ['downloader'];
-handler.command = ['play', 'play2', 'play3', 'play4']
-//handler.limit = 3
+handler.help = ["play"].map(v => v + " <formato> <búsqueda o enlace>")
+handler.tags = ["downloader"]
+handler.command = ['play', 'play2', 'mp3', 'mp4', 'mp3doc', 'mp4doc']
 handler.register = true 
-export default handler;
+handler.star = 1
 
-async function search(query, options = {}) {
-const search = await yts.search({query, hl: 'es', gl: 'ES', ...options});
-return search.videos;
-}
-
-function MilesNumber(number) {
-const exp = /(\d)(?=(\d{3})+(?!\d))/g;
-const rep = '$1.';
-const arr = number.toString().split('.');
-arr[0] = arr[0].replace(exp, rep);
-return arr[1] ? arr.join('.') : arr[0];
-}
-
-function secondString(seconds) {
-seconds = Number(seconds);
-const d = Math.floor(seconds / (3600 * 24));
-const h = Math.floor((seconds % (3600 * 24)) / 3600);
-const m = Math.floor((seconds % 3600) / 60);
-const s = Math.floor(seconds % 60);
-const dDisplay = d > 0 ? d + (d == 1 ? ' día, ' : ' días, ') : '';
-const hDisplay = h > 0 ? h + (h == 1 ? ' hora, ' : ' horas, ') : '';
-const mDisplay = m > 0 ? m + (m == 1 ? ' minuto, ' : ' minutos, ') : '';
-const sDisplay = s > 0 ? s + (s == 1 ? ' segundo' : ' segundos') : '';
-return dDisplay + hDisplay + mDisplay + sDisplay;
-  }
+export default handler
